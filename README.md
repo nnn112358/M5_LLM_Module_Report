@@ -4,11 +4,11 @@
 
 ##起動音の消し方
 
-root@m5stack-LLM:~# vi /usr/local/m5stack/startup-script.sh
-
-tinyplayの行をコメントアウトします。
+startup-scriptのtinyplayの行をコメントアウトします。
 
 ```
+root@m5stack-LLM:~# vi /usr/local/m5stack/startup-script.sh
+
 #!/bin/sh
 . /etc/profile
 insmod /lib/modules/4.19.125/led-class.ko
