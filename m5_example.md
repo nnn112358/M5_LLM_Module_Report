@@ -1,4 +1,4 @@
-## M5 LLM Moduleのexampleについて
+## LLM Moduleのexampleについて
 
 arduinoのサンプルが通信しているLLM Moduleのバイナリを起動しているスクリプトの場所について。
 Linuxの自動時にサービスとして起動しています。
