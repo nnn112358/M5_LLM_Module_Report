@@ -65,3 +65,8 @@ WantedBy=multi-user.target
 root@m5stack-LLM:~# ls /opt/m5stack/bin/
 llm_asr  llm_audio  llm_kws  llm_llm  llm_sys  llm_tts
 ```
+
+## バイナリのソースコード
+
+M5で次週、公開を予定しているとのこと。(24/11/10)
+
