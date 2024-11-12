@@ -1,5 +1,14 @@
 # M5_LLM_Module
 
+m5-docs:Module-LLM
+https://docs.m5stack.com/ja/module/Module-LLM<br>
+Product Guide:Module-LLM
+https://docs.m5stack.com/zh_CN/guide/llm/llm/arduino<br>
+Module-LLM arduino example
+https://github.com/m5stack/M5Module-LLM<br>
+
+
+![image](https://github.com/user-attachments/assets/3ca187f4-5f35-4a68-af1f-ef86292b4607)
 
 <img src="https://github.com/user-attachments/assets/92a2667d-ed4e-4194-955a-eb18aa583dbc" width="300">
 
