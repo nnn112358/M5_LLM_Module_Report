@@ -9,8 +9,6 @@ https://github.com/m5stack/M5Module-LLM<br>
 
 <br>
 
-![image](https://github.com/user-attachments/assets/3ca187f4-5f35-4a68-af1f-ef86292b4607)
-
 <img src="https://github.com/user-attachments/assets/92a2667d-ed4e-4194-955a-eb18aa583dbc" width="300">
 
 ## 起動音の消し方
