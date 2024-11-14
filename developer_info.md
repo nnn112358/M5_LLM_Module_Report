@@ -1,4 +1,7 @@
 # Developer Information
+LLM Moduleのつぶやきまとめ。
+
+
 
 
 ![image](https://github.com/user-attachments/assets/f57f55a5-3331-4248-a485-f4e76c235868)
