@@ -2,7 +2,7 @@
 LLM Moduleのつぶやきまとめ。
 
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">LLM Module (Ax630C) ing <a href="https://t.co/cFX8eF6eDC">pic.twitter.com/cFX8eF6eDC</a></p>&mdash; M5Stack (@M5Stack) <a href="https://twitter.com/M5Stack/status/1805627405945782670?ref_src=twsrc%5Etfw">June 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ![image](https://github.com/user-attachments/assets/f57f55a5-3331-4248-a485-f4e76c235868)
 ![image](https://github.com/user-attachments/assets/72a6c694-d368-459f-9426-f687b590cb15)
