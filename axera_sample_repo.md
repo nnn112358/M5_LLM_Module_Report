@@ -7,6 +7,7 @@ https://github.com/orgs/AXERA-TECH/repositories
 
 ### ax-samples(example/ax620e)
 https://github.com/AXERA-TECH/ax-samples
+https://github.com/AXERA-TECH/pulsar2-docs/releases/download/v1.9/ax-samples.zip
 
 ```
 	ax_classification	ax_yolov8		ax_yolo11_seg		ax_crowdcount												
