@@ -1,4 +1,4 @@
-##目的
+## 目的
 
 https://github.com/orgs/AXERA-TECH/repositories
 のリポジトリで Module-LLM(ax630c)と関係ありそうなリポジトリ。
