@@ -3,7 +3,7 @@
 https://github.com/orgs/AXERA-TECH/repositories
 のリポジトリで Module-LLM(ax630c)と関係ありそうなリポジトリ。
 
-### ax-samples		
+### ax-samples(example/ax620e)
 https://github.com/AXERA-TECH/ax-samples
 ```
 	ax_classification	ax_yolov8		ax_yolo11_seg		ax_crowdcount												
