@@ -46,8 +46,8 @@ https://github.com/AXERA-TECH/ax-npu-kit-620e
 
 ### GooglrDrive:ModelZoo
 
-https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl
-https://x.com/qqc1989/status/1855507945989038424
+https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl  
+https://x.com/qqc1989/status/1855507945989038424  
 
 ```
 Classification /mobilenetv2
@@ -62,7 +62,7 @@ YOLO_World_v2
 ```
 
 ### GooglrDrive:ax-samples/ax650
-https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS
+https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS  
 
 ```
 dinov2_small_518_precision_opt.axmodel  ppyoloe_plus_crn_m_60e_objects365.axmodel        yolov5s-face.axmodel
