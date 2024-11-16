@@ -1,10 +1,11 @@
 ## 目的
 
-https://github.com/orgs/AXERA-TECH/repositories
+https://github.com/orgs/AXERA-TECH/repositories  
 のリポジトリで Module-LLM(ax630c)と関係ありそうなリポジトリ。
 
 ### ax-samples(example/ax620e)
 https://github.com/AXERA-TECH/ax-samples
+
 ```
 	ax_classification	ax_yolov8		ax_yolo11_seg		ax_crowdcount												
 	ax_yolov5s		ax_yolov8_seg		ax_yolo11_pose		ax_rtdetr												
@@ -41,4 +42,21 @@ https://github.com/AXERA-TECH/ax-npu-kit-620e
 	hvcfp_demo																		
 ```										
 																			
-																			
+
+### ModelZoo
+
+https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl
+https://x.com/qqc1989/status/1855507945989038424
+
+```
+Classification /mobilenetv2
+DepthAnything  
+LLM /InternVL
+LLM /OpenBuddy
+LLM /Qwen
+YOLO11
+YOLO11-Pose
+YOLO11-Seg 
+YOLO_World_v2
+```
+
