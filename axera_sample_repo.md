@@ -42,8 +42,9 @@ https://github.com/AXERA-TECH/ax-npu-kit-620e
 	hvcfp_demo																		
 ```										
 																			
+## 学習モデルの配布場所
 
-### ModelZoo
+### GooglrDrive:ModelZoo
 
 https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl
 https://x.com/qqc1989/status/1855507945989038424
@@ -59,4 +60,21 @@ YOLO11-Pose
 YOLO11-Seg 
 YOLO_World_v2
 ```
+
+### GooglrDrive:ax-samples/ax650
+https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS
+
+```
+dinov2_small_518_precision_opt.axmodel  ppyoloe_plus_crn_m_60e_objects365.axmodel        yolov5s-face.axmodel
+glpdepth_448x576.axmodel                ppyoloe_plus_crn_s_60e_objects365.axmodel        yolov5s-seg.axmodel
+glpdepth_512x640.axmodel                realesrganx4.axmodel                             yolov5s.axmodel
+glpdepth_640x896.axmodel                realesrganx4_npu3.axmodel                        yolov6s.axmodel
+glpdepth_896x1152.axmodel               rtmdet_det.axmodel                               yolov7-tiny-face.axmodel
+person_attribute_infer_sim.axmodel      scrfd_500m_bnkps_shape640x640.axmodel            yolov7-tiny.axmodel
+pfld.axmodel                            segformer-b0-cityscapes-640-1280-argmax.axmodel  yolov8s-pose.axmodel
+portrait_pp_humansegv2.axmodel          segformer.bo.512.ade.axmodel                     yolov8s.axmodel
+ppyoloe.axmodel                         vehicle_attribute_infer_sim.axmodel              yolox.axmodel
+
+```
+
 
