@@ -6,12 +6,12 @@ https://github.com/orgs/AXERA-TECH/repositories
 ### ax-samples		
 https://github.com/AXERA-TECH/ax-samples
 ```
-	ax_classification		ax_yolov8		ax_yolo11_seg		ax_crowdcount												
+	ax_classification	ax_yolov8		ax_yolo11_seg		ax_crowdcount												
 	ax_yolov5s		ax_yolov8_seg		ax_yolo11_pose		ax_rtdetr												
 	ax_yolov5s_seg		ax_yolov8_pose		ax_yolox		ax_depth_anything												
 	ax_yolov5_face		ax_yolov9		ax_yolo_world		ax_imgproc												
 	ax_yolov6		ax_yolov10		ax_yolo_world_open_vocabulary		ax_model_info												
-	ax_yolov7_tiny_face		ax_yolov10_u		ax_scrfd														
+	ax_yolov7_tiny_face	ax_yolov10_u		ax_scrfd														
 	ax_yolov7		ax_yolo11		ax_simcc_pose														
 ```
 
