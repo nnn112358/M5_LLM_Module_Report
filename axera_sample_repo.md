@@ -1,7 +1,9 @@
+# axera-techのリポジトリ調査
+
 ## 目的
 
 https://github.com/orgs/AXERA-TECH/repositories  
-のリポジトリで Module-LLM(ax630c)と関係ありそうなリポジトリ。
+のリポジトリで Module-LLM(ax630c)と関係ありそうなリポジトリを調査した。
 
 ## サンプルのソースコード
 
