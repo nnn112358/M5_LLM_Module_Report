@@ -1,11 +1,5 @@
 # M5_LLM_Module
 <br>
-m5-docs:Module-LLM<br>
-https://docs.m5stack.com/ja/module/Module-LLM<br>
-Product Guide:Module-LLM<br>
-https://docs.m5stack.com/zh_CN/guide/llm/llm/arduino<br>
-Module-LLM arduino example<br>
-https://github.com/m5stack/M5Module-LLM<br>
 
 <br>
 
@@ -57,4 +51,12 @@ root@m5stack-LLM:~# echo 100 > /sys/class/leds/B/brightness
 ③FFCコネクタを上に立てて、FFC刺す。その後コネクタを寝かす。
 ④スピーカーと外枠を戻す
 
+
+## 参考リンク
+m5-docs:Module-LLM<br>
+https://docs.m5stack.com/ja/module/Module-LLM<br>
+Product Guide:Module-LLM<br>
+https://docs.m5stack.com/zh_CN/guide/llm/llm/arduino<br>
+Module-LLM arduino example<br>
+https://github.com/m5stack/M5Module-LLM<br>
 
