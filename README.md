@@ -73,6 +73,9 @@ https://github.com/m5stack/M5Module-LLM<br>
 pulsar2-docs<br>
 https://pulsar2-docs.readthedocs.io/en/latest/index.html<br>
 
+@AXERA-TECH/ax-llm<br>
+https://github.com/AXERA-TECH/ax-llm<br>
+
 @airpocket/M5Stack LLM ModuleをLinuxボードとして利用する際のFAQ/Tips<br>
 https://elchika.com/article/0e41a4a7-eecc-471e-a259-4fc8d710c26a/<br>
 @airpocket/M5Stack LLM ModuleでONNX モデルを変換して使うデモ<br>
