@@ -8,8 +8,8 @@ LLM_Moduleでmobilenetv2でのクラス分類やyoloでのオブジェクトを�
 axera-techのax-samplesのリポジトリのファイルをダウンロードして解凍する。
 
 ```
-wget https://github.com/AXERA-TECH/ax-samples/archive/refs/tags/v0.7.zip
-unzip ax-samples-0.7.zip
+$ wget https://github.com/AXERA-TECH/ax-samples/archive/refs/tags/v0.7.zip
+$ unzip ax-samples-0.7.zip
 ```
 
 ### ax620q_bsp_sdkのダウンロードとパスの設定
@@ -17,19 +17,19 @@ axera-techのax620q_bsp_sdkのリポジトリのファイルをダウンロー�
 後述するax-samplesのビルド時にコマンドを短くするために、ax620q_bsp_sdkのパスを"ax_bsp"と命名する。 
 
 ```
-git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git
-export ax_bsp=$PWD/ax620q_bsp_sdk/msp/out/arm64_glibc/
-echo $ax_bsp
+$ git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git
+$ export ax_bsp=$PWD/ax620q_bsp_sdk/msp/out/arm64_glibc/
+$ echo $ax_bsp
 ```
 
 
 ### OpenCVのダウンロードと解凍
 
 ```
-cd ax-samples-0.7
-mkdir -p ./3rdparty
-wget https://github.com/AXERA-TECH/ax-samples/releases/download/v0.1/opencv-aarch64-linux-gnu-gcc-7.5.0.zip
-unzip opencv-aarch64-linux-gnu-gcc-7.5.0.zip -d ./3rdparty
+$ cd ax-samples-0.7
+$ mkdir -p ./3rdparty
+$ wget https://github.com/AXERA-TECH/ax-samples/releases/download/v0.1/opencv-aarch64-linux-gnu-gcc-7.5.0.zip
+$ unzip opencv-aarch64-linux-gnu-gcc-7.5.0.zip -d ./3rdparty
 ```
 
 
@@ -59,14 +59,14 @@ SET (CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 ### ax-samplesのビルド
 ```
-mkdir build
-cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake -DBSP_MSP_DIR=${ax_bsp}/ -DAXERA_TARGET_CHIP=ax630c ..
-make -j8
-make install
+$ mkdir build
+$ cd build
+$ cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake -DBSP_MSP_DIR=${ax_bsp}/ -DAXERA_TARGET_CHIP=ax630c ..
+$ make -j8
+$ make install
 ```
 
-以下の実行ファイルが生成される。
+./ax-samples-0.7/build/install/ax630c/のフォルダに実行ファイルが生成される。
 
 ```
 ./ax-samples-0.7/build/install/ax630c/
