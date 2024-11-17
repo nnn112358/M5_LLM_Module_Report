@@ -35,7 +35,8 @@ unzip opencv-aarch64-linux-gnu-gcc-7.5.0.zip -d ./3rdparty
 
 ### aarch64のパッケージの導入とaarch64-linux-gnu.toolchain.cmakeファイルの作成
 オフィシャルの手順ではgcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールするが、
-Ubuntu22.04のaptでインストールできるaarch64-linux-gnuでもビルドできるので、変更した。
+Ubuntu22.04のaptでインストールできるaarch64-linux-gnuでもビルドできるので、ここではaarch64-linux-gnuを使用する。
+問題があれば、gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールすること。
 
 ```
 $ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
