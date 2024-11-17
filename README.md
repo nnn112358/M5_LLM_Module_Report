@@ -70,3 +70,20 @@ https://docs.m5stack.com/zh_CN/guide/llm/llm/arduino<br>
 Module-LLM arduino example<br>
 https://github.com/m5stack/M5Module-LLM<br>
 
+pulsar2-docs<br>
+https://pulsar2-docs.readthedocs.io/en/latest/index.html<br>
+
+@airpocket/M5Stack LLM ModuleをLinuxボードとして利用する際のFAQ/Tips<br>
+https://elchika.com/article/0e41a4a7-eecc-471e-a259-4fc8d710c26a/<br>
+@airpocket/M5Stack LLM ModuleでONNX モデルを変換して使うデモ<br>
+https://elchika.com/article/f393da46-65bd-4f76-951c-d0e31dba2987/<br>
+
+@Abandon-ht/ax-AI_develop_guide<br>
+https://github.com/Abandon-ht/ax-AI_develop_guide<br>
+How to export YOLOv8’s ONNX model;<br>
+https://axera-pi-zero-docs-cn.readthedocs.io/en/latest/doc_guide_algorithm.html<br>
+
+ksasao/TextAssistant.ino<br>
+https://gist.github.com/ksasao/37425d3463013221e7fd0f9ae5ab1c62<br>
+@ciniml/ cross compile modules for M5Stack Module LLM <br>
+https://gist.github.com/ciniml/de14b22991c16fbe76558fe86eda8565<br>
