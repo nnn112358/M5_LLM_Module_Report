@@ -1,9 +1,19 @@
 # M5_LLM_Module
-<br>
-
-<br>
-
 <img src="https://github.com/user-attachments/assets/92a2667d-ed4e-4194-955a-eb18aa583dbc" width="300">
+
+<br>
+
+## ax-samplesのビルド手順
+[ax-samplesのビルド手順](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/ax-samples_build.md)<br>
+
+## axera-techのリポジトリ調査
+[axera-techのリポジトリ調査](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/axera_sample_repo.md)<br>
+
+## ncnnでのCPU推論ベンチマーク
+[NCNNでのCPU推論ベンチマーク比較](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/benchmark.md)<br>
+
+<br>
+
 
 ## 起動音の消し方
 
