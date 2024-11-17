@@ -7,16 +7,16 @@ LLM_Moduleでmobilenetv2でのクラス分類やyoloでのオブジェクトを�
 ### ax-samplesの最新版(v0.7)のダウンロードと解凍
 axera-techのax-samplesのリポジトリのファイルをダウンロードして解凍する。
 
-```
+```bash
 $ wget https://github.com/AXERA-TECH/ax-samples/archive/refs/tags/v0.7.zip
 $ unzip ax-samples-0.7.zip
 ```
 
 ### ax620q_bsp_sdkのダウンロードとパスの設定
-axera-techのax620q_bsp_sdkのリポジトリのファイルをダウンロードして解凍する。
-後述するax-samplesのビルド時にコマンドを短くするために、ax620q_bsp_sdkのパスを"ax_bsp"と命名する。 
+次に、ビルドに必要な「ax620q_bsp_sdk」をダウンロードします。このSDKのパスを環境変数ax_bspに設定しておきます。
 
-```
+
+```bash
 $ git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git
 $ export ax_bsp=$PWD/ax620q_bsp_sdk/msp/out/arm64_glibc/
 $ echo $ax_bsp
@@ -24,8 +24,9 @@ $ echo $ax_bsp
 
 
 ### OpenCVのダウンロードと解凍
+サンプルプログラムで使用するOpenCVも必要です。以下の手順でダウンロードし、サードパーティフォルダ（3rdparty）に展開します。
 
-```
+```bash
 $ cd ax-samples-0.7
 $ mkdir -p ./3rdparty
 $ wget https://github.com/AXERA-TECH/ax-samples/releases/download/v0.1/opencv-aarch64-linux-gnu-gcc-7.5.0.zip
@@ -34,6 +35,9 @@ $ unzip opencv-aarch64-linux-gnu-gcc-7.5.0.zip -d ./3rdparty
 
 
 ### aarch64のパッケージの導入とaarch64-linux-gnu.toolchain.cmakeファイルの作成
+
+ARMプロセッサ向けにビルドするために、aarch64用のコンパイラをインストールします。
+
 オフィシャルの手順ではgcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールするが、
 Ubuntu22.04のaptでインストールできるaarch64-linux-gnuでもビルドできるので、ここではaarch64-linux-gnuを使用する。
 問題があれば、gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールすること。
@@ -41,9 +45,10 @@ Ubuntu22.04のaptでインストールできるaarch64-linux-gnuでもビルド�
 ```
 $ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 ```
-../toolchains/aarch64-linux-gnu.toolchain.cmakeに以下のファイルを作成
 
-```/toolchains/aarch64-linux-gnu.toolchain.cmake
+以下の内容で../toolchains/aarch64-linux-gnu.toolchain.cmakeというファイルを作成します。このファイルは、CMakeでクロスコンパイルをする際の設定を記述したものです。
+
+```cpp
 SET (CMAKE_SYSTEM_NAME Linux)
 SET (CMAKE_SYSTEM_PROCESSOR aarch64)
 
@@ -58,13 +63,18 @@ SET (CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 
 ### ax-samplesのビルド
-```
+
+ビルド用のフォルダを作成し、ビルドの準備をします。
+次に、実行ファイルをビルドします。並列処理でビルドを高速化するため、make -j8と指定します。
+
+```bash
 $ mkdir build
 $ cd build
 $ cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake -DBSP_MSP_DIR=${ax_bsp}/ -DAXERA_TARGET_CHIP=ax630c ..
 $ make -j8
 $ make install
 ```
+
 
 ./ax-samples-0.7/build/install/ax630c/のフォルダに実行ファイルが生成される。
 
