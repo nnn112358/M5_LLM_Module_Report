@@ -61,6 +61,33 @@ make -j8
 make install
 ```
 
+以下の実行ファイルが生成される。
+
+```
+./ax-samples-0.7/build/install/ax630c/
+├── ax_classification
+├── ax_crowdcount
+├── ax_depth_anything
+├── ax_imgproc
+├── ax_model_info
+├── ax_rtdetr
+├── ax_scrfd
+├── ax_simcc_pose
+├── ax_yolo_world
+├── ax_yolov5_face
+├── ax_yolov5s
+├── ax_yolov5s_seg
+├── ax_yolov6
+├── ax_yolov7
+├── ax_yolov7_tiny_face
+├── ax_yolov8
+├── ax_yolov8_pose
+├── ax_yolov8_seg
+├── ax_yolov9
+└── ax_yolox
+```
+
+
 参考
 
 https://github.com/AXERA-TECH/ax-samples/blob/main/.github/workflows/build_630c_glibc.yaml
