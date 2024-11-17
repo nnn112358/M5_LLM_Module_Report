@@ -1,6 +1,12 @@
 ## ax-samplesのビルド手順
 
 
+### ax-samplesの最新版(v0.7)のダウンロードと解凍
+```
+wget https://github.com/AXERA-TECH/ax-samples/archive/refs/tags/v0.7.zip
+unzip ax-samples-0.7.zip
+```
+
 ### ax620q_bsp_sdkのダウンロードとパスの設定
 
 ```
@@ -9,11 +15,6 @@ export ax_bsp=$PWD/ax620q_bsp_sdk/msp/out/arm64_glibc/
 echo $ax_bsp
 ```
 
-### ax-samplesの最新版(v0.7)のダウンロードと解凍
-```
-wget https://github.com/AXERA-TECH/ax-samples/archive/refs/tags/v0.7.zip
-unzip ax-samples-0.7.zip
-```
 
 ### OpenCVのダウンロードと解凍
 
