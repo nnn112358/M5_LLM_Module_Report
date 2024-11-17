@@ -49,6 +49,9 @@ https://github.com/AXERA-TECH/ax-npu-kit-620e
 																			
 ## 学習モデルの配布場所
 
+
+![image](https://github.com/user-attachments/assets/24bec6e4-8d26-4c11-bcdf-2e521195997d)
+
 ### GoogleDrive:ModelZoo
 
 https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl  
