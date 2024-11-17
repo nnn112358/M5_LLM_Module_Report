@@ -1,13 +1,20 @@
-## ax-samplesのビルド手順
+# ax-samplesのビルド手順
+
+### 目的
+LLM_Moduleでmobilenetv2でのクラス分類やyoloでのオブジェクトを行うC++のプログラムをビルドする手順について説明する。
 
 
 ### ax-samplesの最新版(v0.7)のダウンロードと解凍
+axera-techのax-samplesのリポジトリのファイルをダウンロードして解凍する。
+
 ```
 wget https://github.com/AXERA-TECH/ax-samples/archive/refs/tags/v0.7.zip
 unzip ax-samples-0.7.zip
 ```
 
 ### ax620q_bsp_sdkのダウンロードとパスの設定
+axera-techのax620q_bsp_sdkのリポジトリのファイルをダウンロードして解凍する。
+後述するax-samplesのビルド時にコマンドを短くするために、ax620q_bsp_sdkのパスを"ax_bsp"と命名する。 
 
 ```
 git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git
