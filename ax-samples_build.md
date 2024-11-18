@@ -78,7 +78,7 @@ $ make install
 ./ax-samples/build/install/ax630c/のフォルダに実行ファイルが生成される。
 
 ```
-./ax-samples-0.7/build/install/ax630c/
+./ax-samples/build/install/ax630c/
 ├── ax_classification
 ├── ax_crowdcount
 ├── ax_depth_anything
@@ -87,7 +87,13 @@ $ make install
 ├── ax_rtdetr
 ├── ax_scrfd
 ├── ax_simcc_pose
+├── ax_yolo11
+├── ax_yolo11_pose
+├── ax_yolo11_seg
 ├── ax_yolo_world
+├── ax_yolo_world_open_vocabulary
+├── ax_yolov10
+├── ax_yolov10_u
 ├── ax_yolov5_face
 ├── ax_yolov5s
 ├── ax_yolov5s_seg
@@ -98,7 +104,9 @@ $ make install
 ├── ax_yolov8_pose
 ├── ax_yolov8_seg
 ├── ax_yolov9
+├── ax_yolov9_u
 └── ax_yolox
+
 ```
 
 
