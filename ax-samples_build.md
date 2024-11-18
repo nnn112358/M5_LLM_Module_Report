@@ -4,7 +4,7 @@
 LLM_Moduleでmobilenetv2でのクラス分類やyoloでのオブジェクトを行うC++のプログラムをビルドする手順について説明する。
 
 
-### ax-samplesの最新版(v0.7)のダウンロードと解凍
+### ax-samplesの最新版のダウンロードと解凍
 axera-techのax-samplesのリポジトリのファイルをダウンロードして解凍する。
 
 ```bash
@@ -37,9 +37,9 @@ $ unzip opencv-aarch64-linux-gnu-gcc-7.5.0.zip -d ./3rdparty
 
 ARMプロセッサ向けにビルドするために、aarch64用のコンパイラをインストールします。
 
-オフィシャルの手順ではgcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールするが、
-Ubuntu22.04のaptでインストールできるaarch64-linux-gnuでもビルドできるので、ここではaarch64-linux-gnuを使用する。
-問題があれば、gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールすること。
+オフィシャルの手順ではgcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールしますが、
+Ubuntu22.04のaptでインストールできるaarch64-linux-gnuでもビルドできるため、aarch64-linux-gnuを使用しました。
+問題があれば、gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールして置き換えることが必要です。
 
 ```
 $ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
@@ -75,7 +75,7 @@ $ make install
 ```
 
 
-./ax-samples/build/install/ax630c/のフォルダに実行ファイルが生成される。
+./ax-samples/build/install/ax630c/のフォルダに実行ファイルが生成されました。
 
 ```
 ./ax-samples/build/install/ax630c/
