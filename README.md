@@ -132,3 +132,4 @@ https://zenn.dev/mongonta/articles/35b37ee0bc057c<br>
 
 sipeed/maixIV<br>
 https://wiki.sipeed.com/hardware/zh/maixIV/m4ndock/axmodel-deploy.html<br>
+https://dl.sipeed.com/shareURL/MaixIV/M4N-Dock<br>
