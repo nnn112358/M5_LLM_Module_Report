@@ -62,6 +62,14 @@ root@m5stack-LLM:~# echo 100 > /sys/class/leds/B/brightness
 ④スピーカーと外枠を戻す
 
 
+## I2Cについて
+
+I2Cは、LLMモジュールの背面にジャンパーが出ています。
+<img src="https://github.com/user-attachments/assets/3824a95b-849c-42f1-a66a-a5ed38a27480" width="500"><br>
+I2Cの上のパッドの右側がBUSの17pin、I2Cの下のパッドの右側がBUSの18pinです。
+
+<img src="https://github.com/user-attachments/assets/dfcd5124-b171-4463-ba3d-0a8a01611ea7" width="500"><br>
+
 ## 参考リンク
 m5-docs:Module-LLM<br>
 https://docs.m5stack.com/ja/module/Module-LLM<br>
