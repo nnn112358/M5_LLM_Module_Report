@@ -26,7 +26,7 @@ $ echo $ax_bsp
 サンプルプログラムで使用するOpenCVも必要です。以下の手順でダウンロードし、サードパーティフォルダ（3rdparty）に展開します。
 
 ```bash
-$ cd ax-samples-0.7
+$ cd ax-samples
 $ mkdir -p ./3rdparty
 $ wget https://github.com/AXERA-TECH/ax-samples/releases/download/v0.1/opencv-aarch64-linux-gnu-gcc-7.5.0.zip
 $ unzip opencv-aarch64-linux-gnu-gcc-7.5.0.zip -d ./3rdparty
@@ -75,7 +75,7 @@ $ make install
 ```
 
 
-./ax-samples-0.7/build/install/ax630c/のフォルダに実行ファイルが生成される。
+./ax-samples/build/install/ax630c/のフォルダに実行ファイルが生成される。
 
 ```
 ./ax-samples-0.7/build/install/ax630c/
