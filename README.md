@@ -69,8 +69,8 @@ root@m5stack-LLM:~# echo 100 > /sys/class/leds/B/brightness
 https://x.com/HanxiaoM/status/1856908829411483666<br>
 
 I2Cは、LLMモジュールの背面にジャンパーが出ています。<br>
-I2Cの上のパッドの右側がBUSの17pin、I2Cの下のパッドの右側がBUSの18pinです。<br>
-SCLの丸いパッドとSDLの丸いパッドもあるが、I2Cのパッド(BUS_SCL、BUS_SDL)とは繋がってない。<br>
+I2Cの上のパッドの右側がBUSの17pin、I2Cの下のパッドの右側がBUSの18pinでした。<br>
+SCLの丸いパッドとSDLの丸いパッドもあるが、I2Cのパッド(BUS_SCL、BUS_SDL)とは繋がっていませんでした。<br>
 <img src="https://github.com/user-attachments/assets/dfcd5124-b171-4463-ba3d-0a8a01611ea7" width="500"><br>
 
 ## 参考リンク
