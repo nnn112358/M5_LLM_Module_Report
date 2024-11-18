@@ -52,7 +52,7 @@ https://github.com/AXERA-TECH/ax-npu-kit-620e
 
 
 
-| |ソースコード|場所|モデル|場所|
+| |source|場所|model|場所|
 |:----|:----|:----|:----|:----|
 | ax_classification|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/101kKzpUoHzsXft7MqbxWxUeHMxuXzHLf|
 | ax_crowdcount|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
