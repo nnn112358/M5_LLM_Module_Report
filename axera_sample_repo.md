@@ -5,6 +5,52 @@
 https://github.com/orgs/AXERA-TECH/repositories  
 のリポジトリで Module-LLM(ax630c)と関係ありそうなリポジトリを調査した。
 
+
+## まとめ
+
+
+| |-|場所|-|場所|
+|:----|:----|:----|:----|:----|
+| ax_classification|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/101kKzpUoHzsXft7MqbxWxUeHMxuXzHLf|
+| ax_crowdcount|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+| ax_depth_anything|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/1cHT7zXHLhg0UuTv4kARbscKb8MJiA-0Z|
+| ax_imgproc|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+| ax_model_info|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+| ax_rtdetr|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+| ax_scrfd|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+| ax_simcc_pose|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+| ax_yolo_world|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+| ax_yolov5_face|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
+| ax_yolov5s|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|quick_start_example|
+| ax_yolov5s_seg|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
+| ax_yolov6|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
+| ax_yolov7|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
+| ax_yolov7_tiny_face|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
+| ax_yolov8|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
+| ax_yolov8_pose|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
+| ax_yolov8_seg|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+| ax_yolov9|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+|ax_yolox|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
+|LLM/InternalVL|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1l5tlsfU43damLJ_eKor8SGtWykqY1jIL|
+|LLM/qwen2.5-corder-0.5b|×|ソースコードがない|〇|https://drive.google.com/drive/folders/14gYqz2SvpuWwoHY45M0KGOyRK4Ndo0rK|
+|LLM/qwen2.5-0.5b-prefill|×|ソースコードがない|〇|https://drive.google.com/drive/folders/14gYqz2SvpuWwoHY45M0KGOyRK4Ndo0rK|
+|LLM/openbuddy-1b|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1pkyj4VyP9URbG5xWrIGNVKJ58QXBZ0Z2|
+|ax_yolo10|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/1ciRJ-WdvlP02J9VXtGrJ2K-mk6pxz8RK|
+|ax_yolo11|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/1ft-WcHucGjOe6tLUUvyEo3DgpCp1SdpN?usp=drive_link|
+|ax_yolo11_pose|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/1xfDNmIF2cKqOyB9Wle9sOJvH3RTCCKEx|
+|ax_yolo11_seg|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/1gyHtMj5ST1_ACVRJAEUAnAV7klya-e9y|
+|ax_yolo_world_open_vocabulary|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/1ftY0PuJGlJh-PaBcLeWgEErkmS4IF7c-|
+
+
+以下のGoogleDriveに格納されている。<br>	
+quick_start_example<br>
+https://github.com/xiguadong/assets/releases/download/v0.1/quick_start_example.zip	<br>	
+GoogleDrive1<br>
+https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl		<br>
+GoogleDrive2<br>
+https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS		<br>
+
+
 ## サンプルのソースコード
 
 ### ax-samples(example/ax620e)
@@ -48,51 +94,6 @@ https://github.com/AXERA-TECH/ax-npu-kit-620e
 ```										
 																			
 ## 学習モデルの配布場所
-
-以下のGoogleDriveに格納されている。<br>	
-quick_start_example<br>
-https://github.com/xiguadong/assets/releases/download/v0.1/quick_start_example.zip	<br>	
-GoogleDrive1<br>
-https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl		<br>
-GoogleDrive2<br>
-https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS		<br>
-
-
-
-| |source|場所|model|場所|
-|:----|:----|:----|:----|:----|
-| ax_classification|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/101kKzpUoHzsXft7MqbxWxUeHMxuXzHLf|
-| ax_crowdcount|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-| ax_depth_anything|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|https://drive.google.com/drive/folders/1cHT7zXHLhg0UuTv4kARbscKb8MJiA-0Z|
-| ax_imgproc|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-| ax_model_info|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-| ax_rtdetr|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-| ax_scrfd|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-| ax_simcc_pose|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-| ax_yolo_world|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-| ax_yolov5_face|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
-| ax_yolov5s|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|〇|quick_start_example|
-| ax_yolov5s_seg|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
-| ax_yolov6|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
-| ax_yolov7|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
-| ax_yolov7_tiny_face|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
-| ax_yolov8|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
-| ax_yolov8_pose|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|△|ax650e版のモデルがGoogleDriveにある|
-| ax_yolov8_seg|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-| ax_yolov9|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-|ax_yolox|〇|https://github.com/AXERA-TECH/ax-samples/tree/main/examples/ax620e|×|見当たらない|
-|LLM/InternalVL|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1l5tlsfU43damLJ_eKor8SGtWykqY1jIL|
-|LLM/qwen2.5-corder-0.5b|×|ソースコードがない|〇|https://drive.google.com/drive/folders/14gYqz2SvpuWwoHY45M0KGOyRK4Ndo0rK|
-|LLM/qwen2.5-0.5b-prefill|×|ソースコードがない|〇|https://drive.google.com/drive/folders/14gYqz2SvpuWwoHY45M0KGOyRK4Ndo0rK|
-|LLM/openbuddy-1b|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1pkyj4VyP9URbG5xWrIGNVKJ58QXBZ0Z2|
-|ax_yolo10|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1ciRJ-WdvlP02J9VXtGrJ2K-mk6pxz8RK|
-|ax_yolo11|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1ft-WcHucGjOe6tLUUvyEo3DgpCp1SdpN?usp=drive_link|
-|ax_yolo11_pose|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1xfDNmIF2cKqOyB9Wle9sOJvH3RTCCKEx|
-|ax_yolo11_seg|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1gyHtMj5ST1_ACVRJAEUAnAV7klya-e9y|
-|ax_yolo_world_open_vocabulary|×|ソースコードがない|〇|https://drive.google.com/drive/folders/1ftY0PuJGlJh-PaBcLeWgEErkmS4IF7c-|
-
-
-
 
 
 
