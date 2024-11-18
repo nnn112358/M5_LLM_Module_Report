@@ -64,9 +64,12 @@ root@m5stack-LLM:~# echo 100 > /sys/class/leds/B/brightness
 
 ## I2Cについて
 
-I2Cは、LLMモジュールの背面にジャンパーが出ています。
+こちらのXの投稿より、<br>
 <img src="https://github.com/user-attachments/assets/3824a95b-849c-42f1-a66a-a5ed38a27480" width="500"><br>
-I2Cの上のパッドの右側がBUSの17pin、I2Cの下のパッドの右側がBUSの18pinです。
+https://x.com/HanxiaoM/status/1856908829411483666<br>
+
+I2Cは、LLMモジュールの背面にジャンパーが出ています。<br>
+I2Cの上のパッドの右側がBUSの17pin、I2Cの下のパッドの右側がBUSの18pinです。<br>
 
 <img src="https://github.com/user-attachments/assets/dfcd5124-b171-4463-ba3d-0a8a01611ea7" width="500"><br>
 
