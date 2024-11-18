@@ -49,7 +49,7 @@ root@m5stack-LLM:~# echo 100 > /sys/class/leds/B/brightness
 
 ```
 
-## デバック基盤のつなぎ方
+## デバック基板のつなぎ方
 
 
 <img src="https://github.com/user-attachments/assets/2fdaa79b-241d-4e46-b5c5-eaffe938967d" width="300">
