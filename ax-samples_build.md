@@ -8,8 +8,7 @@ LLM_Moduleでmobilenetv2でのクラス分類やyoloでのオブジェクトを�
 axera-techのax-samplesのリポジトリのファイルをダウンロードして解凍する。
 
 ```bash
-$ wget https://github.com/AXERA-TECH/ax-samples/archive/refs/tags/v0.7.zip
-$ unzip ax-samples-0.7.zip
+$ git clone https://github.com/AXERA-TECH/ax-samples
 ```
 
 ### ax620q_bsp_sdkのダウンロードとパスの設定
