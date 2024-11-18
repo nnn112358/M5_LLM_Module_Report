@@ -129,3 +129,6 @@ https://gist.github.com/ksasao/37425d3463013221e7fd0f9ae5ab1c62<br>
 https://gist.github.com/ciniml/de14b22991c16fbe76558fe86eda8565<br>
 M5Stack ModuleLLMでUSB-WiFiドングルを使用する。<br>
 https://zenn.dev/mongonta/articles/35b37ee0bc057c<br>
+
+sipeed/maixIV<br>
+https://wiki.sipeed.com/hardware/zh/maixIV/m4ndock/axmodel-deploy.html<br>
