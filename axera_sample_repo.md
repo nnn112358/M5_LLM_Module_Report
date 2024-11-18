@@ -49,6 +49,13 @@ https://github.com/AXERA-TECH/ax-npu-kit-620e
 																			
 ## 学習モデルの配布場所
 
+以下のGoogleDriveに格納されている。<br>	
+quick_start_example<br>
+https://github.com/xiguadong/assets/releases/download/v0.1/quick_start_example.zip	<br>	
+GoogleDrive1<br>
+https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl		<br>
+GoogleDrive2<br>
+https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS		<br>
 
 
 
