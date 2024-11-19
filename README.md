@@ -111,6 +111,7 @@ https://github.com/m5stack/StackFlow<br>
 
 pulsar2-docs<br>
 https://pulsar2-docs.readthedocs.io/en/latest/index.html<br>
+https://axera-pi-zero-docs-cn.readthedocs.io/zh-cn/latest/doc_guide_algorithm.html<br>
 
 @AXERA-TECH/ax-llm<br>
 https://github.com/AXERA-TECH/ax-llm<br>
