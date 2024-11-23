@@ -51,16 +51,14 @@ root@m5stack-LLM:~# echo 100 > /sys/class/leds/B/brightness
 
 ## デバック基板のつなぎ方
 
-
 <img src="https://github.com/user-attachments/assets/2fdaa79b-241d-4e46-b5c5-eaffe938967d" width="300">
 <img src="https://github.com/user-attachments/assets/e5ae0bd0-fb4d-4603-b28a-8ca44e5deded" width="300">
 
-
-①基板と外枠とのネジを外す
-②スピーカーを外す。その下にFFCコネクタがある。
-③FFCコネクタを上に立てて、FFC刺す。その後コネクタを寝かす。
-④スピーカーと外枠を戻す
-
+1. 基板と外枠についている六角ネジを外します。
+2. スピーカーを取り外します。スピーカは両面テープでとまっているのでゆっくり剥がします。
+　　スピーカーの下にFFCコネクタがあることを確認します。
+3. FFCとFFCコネクタを接続します。FFCコネクタを上に開けると、FFCを挿抜することができます。FFCを差し込み、FFCコネクタを横に倒して、固定てします。
+4. スピーカーと外枠を元に戻して完了です。
 
 ## I2Cについて
 
