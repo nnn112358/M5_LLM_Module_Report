@@ -325,8 +325,113 @@ if __name__ == "__main__":
         quality=QUALITY
     )
 ```
+### LLM Module(Ubuntu)のPythonプログラム
 
+```
+import serial
+import time
+from pathlib import Path
 
+def send_image_over_serial(image_path, serial_port='/dev/ttyS1', baudrate=115200, quality=70):
+    """
+    Send a JPG image over serial port with identification packet
+
+    Args:
+        image_path (str): Path to the JPG image
+        serial_port (str): Serial port to use
+        baudrate (int): Baud rate for serial communication
+        quality (int): JPEG compression quality (1-100)
+    """
+    try:
+        # Open the serial port
+        ser = serial.Serial(
+            port=serial_port,
+            baudrate=baudrate,
+            bytesize=serial.EIGHTBITS,
+            parity=serial.PARITY_NONE,
+            stopbits=serial.STOPBITS_ONE,
+            timeout=1
+        )
+
+        # Check if serial port is open
+        if not ser.is_open:
+            ser.open()
+
+        # Read the image file
+        image_data = Path(image_path).read_bytes()
+        total_size = len(image_data)
+
+        # Create identification packet similar to the reference code
+        # Extract size bytes
+        img_size1 = (total_size & 0xFF0000) >> 16
+        img_size2 = (total_size & 0x00FF00) >> 8
+        img_size3 = (total_size & 0x0000FF) >> 0
+
+        # Create packet with header (0xFF, 0xD8, 0xEA, 0x01) and size information
+        data_packet = bytearray([
+            0xFF,   # Start marker 1
+            0xD8,   # Start marker 2
+            0xEA,   # Custom identifier 1
+            0x01,   # Custom identifier 2
+            img_size1,  # Size byte 1 (MSB)
+            img_size2,  # Size byte 2
+            img_size3,  # Size byte 3 (LSB)
+            0x00,   # Reserved
+            0x00,   # Reserved
+            0x00    # Reserved
+        ])
+
+        # Send identification packet
+        ser.write(data_packet)
+        print(f"Sent identification packet: {' '.join([f'{b:02X}' for b in data_packet])}")
+
+        # Small delay after sending header
+        time.sleep(0.1)
+
+        # Send image data
+        sent = 0
+        chunk_size = 1024
+        while sent < total_size:
+            chunk = image_data[sent:sent + chunk_size]
+            bytes_sent = ser.write(chunk)
+            sent += bytes_sent
+
+            # Print progress
+            progress = (sent / total_size) * 100
+            print(f"Progress: {progress:.1f}% ({sent}/{total_size} bytes)", end='\r')
+
+            # Small delay to prevent buffer overflow
+            time.sleep(0.01)
+
+        print("\nImage transmission completed successfully!")
+
+    except serial.SerialException as e:
+        print(f"Serial port error: {e}")
+    except FileNotFoundError:
+        print(f"Image file not found: {image_path}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        if 'ser' in locals() and ser.is_open:
+            ser.close()
+            print("Serial port closed")
+
+# Example usage
+if __name__ == "__main__":
+    # Configuration
+    IMAGE_PATH = "image.jpg"
+    SERIAL_PORT = "/dev/ttyS1"
+    BAUD_RATE = 921600
+    QUALITY = 70  # JPEG quality (1-100)
+
+    # Send the image
+    send_image_over_serial(
+        image_path=IMAGE_PATH,
+        serial_port=SERIAL_PORT,
+        baudrate=BAUD_RATE,
+        quality=QUALITY
+    )
+```
 ## 参考
 
 Wi-FiがないM5StickVを、M5StickCと繋ぎLINEに投稿してみるまでの手順<br>
