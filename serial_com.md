@@ -1,6 +1,5 @@
 ## 目的
-LLM ModuleとM5Stack CoreS3SEとの間で、シリアル通信を行う
-
+LLM ModuleとM5Stack CoreS3SEとの間でUART通信を行う
 
 ## llm_sysの停止
 LLM ModuleのUbuntuが起動すると、M5StackのLLMのサービス(llm_sys,llm_asr,llm_audio,llm_kws,llm_llm,llm_tts)が自動的に起動するようになっています。
