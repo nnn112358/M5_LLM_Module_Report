@@ -239,8 +239,6 @@ def send_video_over_serial(video_path, serial_port='/dev/ttyS1', baudrate=115200
                 break
 
             resized_frame = cv2.resize(frame, (320, 240), interpolation=cv2.INTER_AREA)
-
-
             # Convert frame to JPEG
             _, frame_data = cv2.imencode('.jpg', resized_frame, [cv2.IMWRITE_JPEG_QUALITY, quality])
             image_data = frame_data.tobytes()
@@ -271,7 +269,6 @@ def send_video_over_serial(video_path, serial_port='/dev/ttyS1', baudrate=115200
 
             # Small delay after sending header
             time.sleep(0.01)
-
 
             start_t = time.perf_counter()
             # Send frame data
@@ -330,3 +327,11 @@ if __name__ == "__main__":
     )
 ```
 
+
+## 参考
+
+Wi-FiがないM5StickVを、M5StickCと繋ぎLINEに投稿してみるまでの手順<br>
+https://qiita.com/nnn112358/items/5efd926fea20cd6c2c43
+
+M5Module-LLM/examples/TextAssistant/TextAssistant.ino<br>
+https://github.com/m5stack/M5Module-LLM/blob/main/examples/TextAssistant/TextAssistant.ino
