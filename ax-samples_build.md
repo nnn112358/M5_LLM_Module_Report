@@ -32,6 +32,8 @@ $ wget https://github.com/AXERA-TECH/ax-samples/releases/download/v0.1/opencv-aa
 $ unzip opencv-aarch64-linux-gnu-gcc-7.5.0.zip -d ./3rdparty
 ```
 
+OpenCVをクロスコンパイルする場合には、以下の手順です。
+
 ```bash
 $ cd ax-samples
 $ cd ./3rdparty
