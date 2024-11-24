@@ -32,6 +32,17 @@ $ wget https://github.com/AXERA-TECH/ax-samples/releases/download/v0.1/opencv-aa
 $ unzip opencv-aarch64-linux-gnu-gcc-7.5.0.zip -d ./3rdparty
 ```
 
+```bash
+$ cd ax-samples
+$ cd ./3rdparty
+$ git clone https://github.com/opencv/opencv.git -b 4.5.0 --depth 1 
+$ git clone https://github.com/opencv/opencv_contrib.git -b 4.5.0 --depth 1
+$ cd opencv
+$ cmake -B build/aarch64 -DCMAKE_TOOLCHAIN_FILE=./platforms/linux/aarch64-gnu.toolchain.cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules/ -DBUILD_LIST=tracking,imgcodecs,videoio,highgui,features2d,ml,xfeatures2d -DCMAKE_BUILD_TYPE=Release . 
+$ cmake --build build/aarch64
+$ cmake --install build/arm --prefix install/aarch64
+
+```
 
 ### aarch64のパッケージの導入とaarch64-linux-gnu.toolchain.cmakeファイルの作成
 
