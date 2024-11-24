@@ -5,6 +5,7 @@ LLM Moduleのつぶやきまとめ。
 
 https://x.com/search?q=%28axera+or+ax630c+OR+ax620a+OR+ax620+OR+ax620q+OR+ax650+OR+ax520+or+llm%29+%28from%3AHanxiaoM+OR+from%3Aqqc1989%29&src=typed_query&f=live
 
+https://x.com/search?q=(axera%20or%20ax630c%20OR%20ax620a%20OR%20ax620%20OR%20ax620q%20OR%20ax650%20OR%20ax520%20or%20llm)%20(from%3A%40hirotakaster)&src=typed_query&f=live
 
 ![image](https://github.com/user-attachments/assets/f57f55a5-3331-4248-a485-f4e76c235868)
 ![image](https://github.com/user-attachments/assets/72a6c694-d368-459f-9426-f687b590cb15)
