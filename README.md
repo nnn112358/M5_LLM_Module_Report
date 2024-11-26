@@ -99,6 +99,14 @@ AX630Cがこのアドレスに正常にアクセスできることを確認し�
 run_internvl2_ax630c.sh 内の --filename_tokenizer_model のIP情報を手順1で指定したIPと一致するように変更します。
 3、run_internvl2_ax630c.sh を実行します。
 
+## CPU温度の確認
+
+CPU温度の確認
+CPU温度は、デバイスファイル"/sys/class/thermal/thermal_zone0/temp"で確認することができます。ただし、この値は1000で割る必要があります。
+
+# cat /sys/class/thermal/thermal_zone0/temp
+47350
+この場合は、CPU温度47.350℃を表します。
 
 
 
