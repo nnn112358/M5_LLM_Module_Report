@@ -1,3 +1,16 @@
+# Abst
+I am expecting Whisper.Axera to work with Module-LLM (AX630C).
+When I performed model conversion of Whisper.Axera, it succeeded with AX650, but failed with AX620E (AX630C).
+
+AX620E small-encoder build=> Fail
+AX620E small-decoder-main build=> Fail
+AX620E small-decoder-loop build=> Fail
+AX650 small-encoder build => Success
+AX650 small-decoder-main build=> Success
+AX650 small-decoder-loop build=> Success
+ 
+https://github.com/ml-inory/whisper.axera/tree/main/model_convert
+
 ## log " AX620E small-encoder build"
 
 ```
