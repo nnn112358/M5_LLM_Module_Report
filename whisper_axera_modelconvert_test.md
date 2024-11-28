@@ -10,6 +10,11 @@ AX650 small-decoder-main build=> Success
 AX650 small-decoder-loop build=> Success  
    
 https://github.com/ml-inory/whisper.axera/tree/main/model_convert  
+
+
+
+
+
   
 ## log " AX620E small-encoder build"
 
