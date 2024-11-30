@@ -1,3 +1,7 @@
+## LLM Moduleのマイクとスピーカを使用する手順
+
+
+
 
 ```
 再生：aplay -D plughw:0,1 test1.wav
