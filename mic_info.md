@@ -53,6 +53,23 @@ https://gist.github.com/MarsTechHAN/d6e51d39c3a0bbc00acea41e24d4d4f1#file-ax630c
 vosk-model-small-ja-0.22
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from:@devemin
 ```
 cat /proc/asound/pcm
 でサウンド構成がわかり、
@@ -74,6 +91,5 @@ pip install pyaudio
 
 昨日のポストと同じく、24bit / bitrate 24000 にして録音した。
 再生もできたけど、やっぱり wave ファイルの Hz/bitrate 次第で変な再生になったりエラーになったりする。これは ALSA あたりを自分はよくわかってないｗ
-
 
 ```
