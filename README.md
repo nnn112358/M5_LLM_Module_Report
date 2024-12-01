@@ -128,6 +128,9 @@ https://axera-pi-zero-docs-cn.readthedocs.io/zh-cn/latest/doc_guide_algorithm.ht
 @AXERA-TECH/ax-llm<br>
 https://github.com/AXERA-TECH/ax-llm<br>
 
+@tokkyo/おなかすいたWiKi<br>
+https://wiki.onakasuita.org/pukiwiki/?Module%20LLM<br>
+
 @airpocket/M5Stack LLM ModuleをLinuxボードとして利用する際のFAQ/Tips<br>
 https://elchika.com/article/0e41a4a7-eecc-471e-a259-4fc8d710c26a/<br>
 @airpocket/M5Stack LLM ModuleでONNX モデルを変換して使うデモ<br>
@@ -150,4 +153,3 @@ https://wiki.sipeed.com/hardware/zh/maixIV/m4ndock/axmodel-deploy.html<br>
 https://dl.sipeed.com/shareURL/MaixIV/M4N-Dock<br>
 
 
-https://wiki.onakasuita.org/pukiwiki/?Module%20LLM
