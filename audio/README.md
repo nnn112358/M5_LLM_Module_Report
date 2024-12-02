@@ -1,5 +1,5 @@
 #　目的
-Module-LLMのマイクからwavファイルをPythonで取得し、
+Module-LLMのマイクからwavファイルをPython(ALSA経由)で取得し、
 wavファイルをcsv化して確認をした。<br>
 
 - マイクからwavファイルを生成する<br>
