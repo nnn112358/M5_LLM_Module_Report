@@ -9,6 +9,8 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/audio/wav_to_csv.py<
 
 結果<br>
 1Hzのtoneを録音した結果<br>
+注記：16Bitでは、ヘッダとデータとで周波数が2倍ズレる不具合があるので、ヘッダに書き込む周波数を2倍に変えている。Pythonプログラム参照<br>
+注記：32Bitでは、16Bitの振幅に換算するために、1/(2^16)を乗じている。<br>
 ![image](https://github.com/user-attachments/assets/bcaaf37f-ea52-415d-be05-0e5acf732c1f)
 
 経緯<br>
