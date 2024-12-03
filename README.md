@@ -10,6 +10,11 @@
 ## ax-samplesのビルド手順
 [ax-samplesのビルド手順](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/ax-samples_build.md)<br>
 
+## YOLO11をModule-LLMのNPU用モデルへ変換する
+[YOLO11をModule-LLMのNPU用モデルへ変換する](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conv.md)<br>
+
+
+
 ## axera-techのリポジトリ調査
 [axera-techのリポジトリ調査](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/axera_sample_repo.md)<br>
 
