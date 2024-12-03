@@ -2,7 +2,9 @@
 Module-LLMとPCとの間でファイルをコピーする手段について。
 
 
-## PC→Module-LLMへSCPでファイル転送①
+## SCPでファイル転送
+
+### PC→Module-LLMへSCPでファイル転送①
 
 TeraTermから、SSH接続でModule-LLMと通信をしている場合、TeraTermのGUIからSCPコマンド使うことができます。 <br>
 SCPはリモートマシンとローカルマシンとの間でファイルをコピーする際に使用するLinuxのコマンドですが、TeraTermはGUIにSCPの機能を設けています。
@@ -12,7 +14,7 @@ SCPのWindowが出てきますので、転送先のModule-LLMのフォルダの�
 <img src="https://github.com/user-attachments/assets/aa4324be-f677-4772-9a42-f06eaa35eaa5" width="50%">
 
 
-## PC→Module-LLMへSCPでファイル転送②
+### PC→Module-LLMへSCPでファイル転送②
 メニューのファイルから、SSH SCPを選択します。 <br>
 <img src="https://github.com/user-attachments/assets/92fa47e2-0f47-45e4-8e28-ae59a9690868" width="50%">
 
@@ -20,7 +22,7 @@ SCPのWindowが出てきますので、転送先のModule-LLMのフォルダの�
 SCPのウィンドウの上半分のメニューを使います。PC内のファイルを選択、もしくはPC内のファイルをこのウィンドウにドラックし、転送先のModule-LLMのフォルダのパスを入力して送信を押します。 <br>
 <img src="https://github.com/user-attachments/assets/f702efaa-1f78-4078-a60b-59de5f37cc41" width="50%">
 
-## Module-LLM→PCへSCPでファイル転送
+### Module-LLM→PCへSCPでファイル転送
 
 SCPのウィンドウの下半分のメニューを使います。Module-LLM内のファイルのパスを入力し、転送先のPCのフォルダのパスを入力して受信を押します。 <br>
 
