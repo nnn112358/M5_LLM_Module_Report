@@ -1,5 +1,6 @@
 ## 目的
-Module-LLMとPCとの間でファイルをコピーする手段について。
+Module-LLMとPCとの間でファイルをコピーする手段について説明します。
+TeraTermのGUIからSCP転送を行う方法と、Module-LLMにSambaサーバ機能をインストールする方法について説明します。
 
 
 ## SCPでファイル転送
