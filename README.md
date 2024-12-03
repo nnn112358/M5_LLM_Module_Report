@@ -3,6 +3,10 @@
 
 <br>
 
+## Module-LLMへファイル転送を行うには
+[Module-LLMへファイル転送を行うには](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/file_copy.md)
+
+
 ## ax-samplesのビルド手順
 [ax-samplesのビルド手順](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/ax-samples_build.md)<br>
 
