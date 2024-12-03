@@ -33,7 +33,8 @@ SCPのウィンドウの下半分のメニューを使います。Module-LLM内�
 
 Module-LLMのRootアカウントへ、デバック基板からログインをします。
 
-ユーザを作成します。
+Sambaで使用する専用ユーザーアカウントを作成します。以下のコマンドでユーザーを作成します。
+パスワードの設定は必須ですが、その他の情報（フルネーム、部屋番号、電話番号など）は任意です。
 
 ```
 root@m5stack-LLM:~# adduser user_name
@@ -55,30 +56,33 @@ Enter the new value, or press ENTER for the default
 Is the information correct? [Y/n]
 ```
 
-ユーザをsudoグループに追加します。
+作成したユーザーに管理者権限を付与するため、sudoグループに追加します。
 
 ```
 root@m5stack-LLM:~# gpasswd -a user_name sudo
 Adding user user_name to group sudo
 ```
 
-Sambaをインストールします。
+次に、Sambaパッケージのインストールを行います。Ubuntuのパッケージマネージャーを使用して、以下のコマンドでインストールします。
 
 ```
 root@m5stack-LLM:~# sudo apt install -y samba
 ```
 
-Sambaの設定ファイルをバックアップします。
+インストール完了後、Sambaの設定ファイルを編集する前に、現在の設定をバックアップします。
+これは、設定に問題が発生した場合に元の状態に戻せるようにするためです。
+
 ```
 root@m5stack-LLM:~# cd /etc/samba/
 root@m5stack-LLM:~# sudo cp -a smb.conf smb.conf.default
 ```
 
+次に、Samba設定ファイルを編集します。このファイルには、共有の基本設定からセキュリティ設定まで、重要な設定が含まれます：
 ```
   951  sudo vim smb.conf
 ```
 
-smb.confの末尾に下記を追加します。
+ユーザー専用の共有設定を追加します。この設定により、指定したユーザーのみがアクセスできる共有フォルダを作成することができます。
 
 ```smb.conf
 [user_name]
@@ -87,10 +91,19 @@ browsable = yes
 writable = yes
 guest ok = no
 read only = no
+
+各設定項目の説明：
+path: 共有するディレクトリのパス
+valid users: アクセスを許可するユーザーを指定
+browsable: 共有フォルダの表示・非表示
+writable: 書き込み権限の有無
+guest ok: ゲストアクセスの許可
+create mask: 新規作成ファイルのパーミッション
+directory mask: 新規作成ディレクトリのパーミッション
+force user/group: アクセス時の強制ユーザー/グループ
 ```
 
-ユーザーにsambaパスワードを設定します。
-
+設定が完了したら、Sambaユーザーのパスワードを設定します。このパスワードは、Windowsからアクセスする際に使用されます。
 
 ```
 root@m5stack-LLM:~# sudo smbpasswd -a user_name
@@ -98,9 +111,17 @@ New SMB password:
 Retype new SMB password:
 Added user user_name.
 ```
+すべての設定が完了したら、Sambaサービスを再起動して新しい設定を適用します：
 
 ```
+sudo systemctl restart smbd
+sudo systemctl restart nmbd
+```
 PCから、共有フォルダへアクセスして確認します。
+Windowsのエクスプローラーのアドレスバーに以下の形式でアドレスを入力します。
+接続時に認証ダイアログが表示されますので、設定したSambaユーザー名とパスワードを入力してアクセスします。
+
+```
 \\｛samba接続先IPアドレス｝\｛ユーザー名｝
 ```
 
