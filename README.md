@@ -161,4 +161,11 @@ sipeed/maixIV<br>
 https://wiki.sipeed.com/hardware/zh/maixIV/m4ndock/axmodel-deploy.html<br>
 https://dl.sipeed.com/shareURL/MaixIV/M4N-Dock<br>
 
+maixHub axera-pi<br>
+https://maixhub.com/model/zoo?name=yolo&sort=recently&platform=axera-pi<br>
+
+爱芯元智AX650N部署yolov5s 自定义模型<br>
+https://www.cnblogs.com/smallwxw/p/17836977.html<br>
+
+https://github.com/derronqi/yolov8-face?tab=readme-ov-file
 
