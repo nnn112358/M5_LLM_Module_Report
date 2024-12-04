@@ -16,7 +16,7 @@
 
 
 ## axera-techのリポジトリ調査
-[axera-techのリポジトリ調査](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/axera_sample_repo.md)<br>
+[axera-techのリポジトリ調査](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/ax-sample_repo.md)<br>
 
 ## ncnnでのCPU推論ベンチマーク
 [NCNNでのCPU推論ベンチマーク比較](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/benchmark.md)<br>
