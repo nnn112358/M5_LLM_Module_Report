@@ -1,13 +1,38 @@
-ax620e_bsp_sdk/msp/sample
+Module-LLMのマイクを調べてみた件(SDK編)
+
 ## 目的
-AxeraのSDKを使って、マイクから録音をするには。
+Module-LLMのマイクは、LinuxのALSA Driverを経由して録音を行うと、16Bitのときに異常が見られたので、
+axera-techのSDKを使って録音する手段を試してみました。
+
+## sample_audioでの録音
+
+Module-LLMでは、sample_audioコマンドを使って、axera-techのSDKを使ったマイクの操作を行うことができます。
+sample_audioは、AxeraのSDK(ax620e_bsp_sdk)のサンプルプログラムです。
 
 https://github.com/AXERA-TECH/ax620e_bsp_sdk/tree/main/msp/sample/audio
 
-
-## 
 ```
-# sample_audio -h
+# 16Bit 8kHzで録音
+root@m5stack-LLM:# sample_audio ai -D 0 -d 0 -r 8000 -p 160 -w 1 -o sample_audio_S16_LE_08000Hz.wav 
+# 16Bit 16kHzで録音
+root@m5stack-LLM:# sample_audio ai -D 0 -d 0 -r 16000 -p 160 -w 1 -o sample_audio_S16_LE_16000Hz.wav
+# 16Bit 24kHzで録音
+root@m5stack-LLM:# sample_audio ai -D 0 -d 0 -r 24000 -p 160 -w 1 -o sample_audio_S16_LE_24000Hz.wav
+# 16Bit 32kHzで録音
+root@m5stack-LLM:# sample_audio ai -D 0 -d 0 -r 32000 -p 160 -w 1 -o sample_audio_S16_LE_32000Hz.wav
+```
+
+Module-LLMのマイクを調べてみた件(ALSA編)と同じく、
+Module-LLMで、スマホからの1kHzのトーン音を録音しました。
+こちらのプログラムからは、16Bitで取り込んでも目立った異常はないことを確認しました。
+
+https://x.com/nnn112358/status/1864741422861292004
+
+
+##  sample audioのヘルプ
+
+```
+root@m5stack-LLM:#  sample_audio -h
 usage: sample_audio      <command> <args>
 commands:
 ai:                      ai get data.
@@ -67,12 +92,14 @@ args:
   --eq:                   eq enable.                  (support int), default: 0
 ````
 
-1）功能说明：
+## sample audioの説明
+
+1）機能の説明:：
 オーディオ フォルダーの下にあるコードは、顧客がオーディオ モジュール全体の構成プロセスをすぐに理解できるように、Axera SDK パッケージによって提供されるサンプル リファレンス コードです。
 サンプル コードでは、ai 記録、ao 再生、ai_aenc エンコード、adec_ao デコードの関数を示します。
-当社は、Everest メーカーのコーデック ドライバーを提供しています: es8388、es7210、es8311、es7243l、および es8156
+Axera-techは、Everest メーカーのコーデック ドライバーを提供しています: es8388、es7210、es8311、es7243l、および es8156
 
-2）使用示例：
+2）使用例：
 例 1: ヘルプ情報を表示する
 ````
 sample_audio -h
@@ -116,6 +143,38 @@ sample_audio ao -D 0 -d 1 --hpf 1 --hpf-freq 200 --hpf-db -12 --lpf 1 --lpf-freq
 (1) サウンド カード番号とデバイス番号については、/dev/snd/ を参照してください。例:
  pcmC0D0c: カード 0、デバイス 0、キャプチャ デバイス
  pcmC0D1p: カード 0、デバイス 1、再生デバイス
+
+
+## sample_audioのビルド手順
+
+sample_audioはax620e_bsp_sdkのサンプルプログラムなので、ax620e_bsp_sdkのサンプルプログラム一式をビルドしてみることにしました。
+
+
+ax620q_bsp_sdkのダウンロードとパスの設定
+ビルドに必要な「ax620q_bsp_sdk」をダウンロードします。このSDKのパスを環境変数ax_bspに設定しておきます。
+
+```
+$ git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git
+cd ax620q_bsp_sdk
+```
+
+```
+$ export ax_bsp=$PWD/ax620q_bsp_sdk/msp/out/arm64_glibc/
+$ echo $ax_bsp
+```
+
+以下のURLから、third-party_v2.0.0.tar.gzをダウンロード。
+https://drive.google.com/drive/folders/1JkZQlCtPz2U3W0mvBwwryHXW_Uo79stI?usp=sharing
+
+```
+tar -zxvf third-party_v2.0.0.tar.gz third-party/
+```
+
+```
+vi build/cross_arm64_glibc.mak
+```
+
+ make p=AX630C_emmc_arm64_k419 install
 
 
 
