@@ -149,32 +149,61 @@ sample_audio ao -D 0 -d 1 --hpf 1 --hpf-freq 200 --hpf-db -12 --lpf 1 --lpf-freq
 
 sample_audioはax620e_bsp_sdkのサンプルプログラムなので、ax620e_bsp_sdkのサンプルプログラム一式をビルドしてみることにしました。
 
-
-ax620q_bsp_sdkのダウンロードとパスの設定
 ビルドに必要な「ax620q_bsp_sdk」をダウンロードします。このSDKのパスを環境変数ax_bspに設定しておきます。
 
 ```
 $ git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git
-cd ax620q_bsp_sdk
+$ cd ax620q_bsp_sdk
+```
+
+以下のGoogleDriveのURLから、third-party_v2.0.0.tar.gzをダウンロード。
+[third-party_v2.0.0.tar.g](https://drive.google.com/drive/folders/1JkZQlCtPz2U3W0mvBwwryHXW_Uo79stI?usp=sharing)
+
+ax620q_bsp_sdkフォルダの下でthird-partyを解凍します。
+```
+$ cd ax620q_bsp_sdk
+$ tar -zxvf third-party_v2.0.0.tar.gz third-party/
+```
+
+
+ARMプロセッサ向けにビルドするために、aarch64用のコンパイラをインストールします。
+
+オフィシャルの手順ではgcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールしますが、 
+Ubuntu22.04のaptでインストールできるaarch64-linux-gnuでもビルドできるため、aarch64-linux-gnuを使用しました。 
+問題があれば、gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnuをインストールして置き換えることが必要です。
+
+```
+$ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+```
+
+クロスコンパイラーの設定を編集して、aarch64-linux-gnu-を設定します。
+
+```
+$ vi build/cross_arm64_glibc.mak
+```
+
+``` build/cross_arm64_glibc.mak
+# CROSS	:= aarch64-none-linux-gnu-
+CROSS	:= aarch64-linux-gnu-
+CC	= $(CROSS)gcc
+CPP	= $(CROSS)g++
+LD	= $(CROSS)ld
+AR	= $(CROSS)ar -rcs
+OBJCPOY	= $(CROSS)objcopy
+STRIP	= $(CROSS)strip
+```
+
+
+audioフォルダに入り、sample_audioをコンパイルします。
+
+```
+$ cd msp/sample/audio
+$ make p=AX630C_emmc_arm64_k419
 ```
 
 ```
-$ export ax_bsp=$PWD/ax620q_bsp_sdk/msp/out/arm64_glibc/
-$ echo $ax_bsp
+msp/out/arm64_glibc/bin/sample_audio
 ```
-
-以下のURLから、third-party_v2.0.0.tar.gzをダウンロード。
-https://drive.google.com/drive/folders/1JkZQlCtPz2U3W0mvBwwryHXW_Uo79stI?usp=sharing
-
-```
-tar -zxvf third-party_v2.0.0.tar.gz third-party/
-```
-
-```
-vi build/cross_arm64_glibc.mak
-```
-
- make p=AX630C_emmc_arm64_k419 install
 
 
 
