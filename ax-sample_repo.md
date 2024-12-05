@@ -68,13 +68,6 @@ https://github.com/AXERA-TECH/pulsar2-docs/releases/download/v1.9/ax-samples.zip
 ```
 
 																
-### axcl-sample	
-https://github.com/AXERA-TECH/axcl-sample
-
-```
-	sample_axclrt_classification																		
-	sample_axclrt_yolov5s																		
-```
 					
 ### ax620e_bsp_sdk		
 https://github.com/AXERA-TECH/ax620e_bsp_sdk
