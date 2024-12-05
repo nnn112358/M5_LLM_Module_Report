@@ -1,7 +1,11 @@
 ax620e_bsp_sdk/msp/sample
+## 目的
+AxeraのSDKを使って、マイクから録音をするには。
 
 https://github.com/AXERA-TECH/ax620e_bsp_sdk/tree/main/msp/sample/audio
 
+
+## 
 ```
 # sample_audio -h
 usage: sample_audio      <command> <args>
@@ -70,32 +74,41 @@ args:
 
 2）使用示例：
 例 1: ヘルプ情報を表示する
+````
 sample_audio -h
-
+````
 例 2: 16kHz オーディオを録音する
+````
 sample_audio ai -D 0 -d 0 -r 16000 -p 160 -w 1
-
+````
 例 3: FIXED モードのエコー キャンセルを有効にして 16kHz オーディオを録音する
+````
 sample_audio ai -D 0 -d 0 -r 16000 -p 160 --aec-mode 2 --routing-mode 0 --layout 1 -w 1
-
+````
 例 4: 16kHz オーディオを再生する
+````
 sample_audio ao -D 0 -d 1 -r 16000
-
+````
 例 5: 16kHz オーディオを録音してエンコードする
+````
 sample_audio ai_aenc -D 0 -d 0 -r 16000 -p 160 -w 1
-
+````
 例 6: 16kHz オーディオを録音し、モノラルでエンコードする
+````
 sample_audio ai_aenc -D 0 -d 0 -r 16000 -p 160 --layout 1 --aenc-chns 1 -w 1
-
+````
 例 7: 16kHz オーディオをデコードして再生する
+````
 sample_audio adec_ao -D 0 -d 1 -r 16000
-
+````
 例 8: 内蔵コーデック アップストリーム HPF LPF EQ
+````
 sample_audio ai -D 0- d 0 --hpf 1 --hpf-freq 200 --hpf-db -12 --lpf 1 --lpf-freq 3000 --lpf-db 0 --eq 1
-
+````
 例 9: 内蔵コーデック ダウンストリーム HPF LPF EQ
+````
 sample_audio ao -D 0 -d 1 --hpf 1 --hpf-freq 200 --hpf-db -12 --lpf 1 --lpf-freq 3000 --lpf-db 0 --eq 1
-
+````
 3) 実行結果の例:
 正常に実行したら、Ctrl+C を実行して終了します。wave ファイルが現在のディレクトリに生成され、ユーザーはそれを開いて実際の効果を確認できます。
 
