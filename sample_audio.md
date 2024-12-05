@@ -156,7 +156,7 @@ $ git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git
 $ cd ax620q_bsp_sdk
 ```
 
-以下のGoogleDriveのURLから、third-party_v2.0.0.tar.gzをダウンロード。
+以下のGoogleDriveのURLから、third-party_v2.0.0.tar.gzをダウンロードします。
 [third-party_v2.0.0.tar.g](https://drive.google.com/drive/folders/1JkZQlCtPz2U3W0mvBwwryHXW_Uo79stI?usp=sharing)
 
 ax620q_bsp_sdkフォルダの下でthird-partyを解凍します。
