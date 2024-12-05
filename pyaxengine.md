@@ -24,4 +24,10 @@ Class Index: 285, Score: 7.924480438232422
 Class Index: 277, Score: 7.79240608215332
 ```
 
-https://github.com/AXERA-TECH/pyaxengine
+## 参考
+
+AXERA-TECH/pyaxengine<br>
+https://github.com/AXERA-TECH/pyaxengine<br>
+
+M5Stack Module LLMのpython用runtimeのデモを動かす<br>
+https://zenn.dev/airpocket/articles/3ae46a450a87be<br>
