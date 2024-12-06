@@ -13,7 +13,12 @@
 ## YOLO11をModule-LLMのNPU用モデルへ変換する
 [YOLO11をModule-LLMのNPU用モデルへ変換する](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conv.md)<br>
 
+## 起動音の消し方
+## Lチカの仕方
+## デバック基板のつなぎ方
+## I2Cについて
 
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/info_memo_241206.md
 
 ## axera-techのリポジトリ調査
 [axera-techのリポジトリ調査](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/ax-sample_repo.md)<br>
