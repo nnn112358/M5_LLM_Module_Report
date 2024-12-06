@@ -3,6 +3,14 @@
 
 <br>
 
+## NPUの使用メモリを確認する
+
+you can check the cmm memory by 
+```
+cat /proc/ax_proc/mem_cmm_info
+```
+
+
 ## Module-LLMへファイル転送を行うには
 [Module-LLMへファイル転送を行うには](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/file_copy.md)
 
