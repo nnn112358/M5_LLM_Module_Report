@@ -122,3 +122,5 @@ https://www.cnblogs.com/smallwxw/p/17836977.html<br>
 
 https://github.com/derronqi/yolov8-face?tab=readme-ov-file
 
+[经验] 【爱芯派 Pro 开发板试用体验】人体姿态估计模型部署后期尝试
+https://bbs.elecfans.com/jishu_2408487_1_1.html
