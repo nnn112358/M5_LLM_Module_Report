@@ -1,5 +1,7 @@
 https://x.com/washishi/status/1866229894763708587?s=46
 
+'''
+
 #!/bin/bash
 cd `dirname $0`
 WIFI_IP=`ip address  show dev wlan0 | grep "inet "|awk -F/ '{print $1}'|sed 's/ *inet //'`
@@ -16,3 +18,5 @@ if [ _$WIFI_IP != "_" ]
   echo '{"request_id":"4","work_id":"sys","action":"reset"}';
 ) | tee | telnet > talk_ip.log 2>&1
 fi
+'''
+
