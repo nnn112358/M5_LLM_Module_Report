@@ -14,6 +14,26 @@ https://zhuanlan.zhihu.com/p/681378259<br>
 基于 AX620Q 部署 YOLOv8<br>
 https://zhuanlan.zhihu.com/p/683050593<br>
 
+基于 AX650N 部署 YOLOv9<br>
+https://zhuanlan.zhihu.com/p/683622844<br>
+
+基于 AX650N 部署 YOLO11<br>
+https://zhuanlan.zhihu.com/p/772269394<br>
+
+基于 AX650N 部署多模态大模型 MiniCPM-V 2.0<br>
+https://zhuanlan.zhihu.com/p/707108832<br>
+
+基于 AX650N/AX630C 部署 Qwen2<br>
+https://zhuanlan.zhihu.com/p/706645301<br>
+
+再谈 YOLO World 部署<br>
+https://zhuanlan.zhihu.com/p/721856217<br>
+
+体验电信星辰 AI LLM（TeleChat）2<br>
+https://zhuanlan.zhihu.com/p/695774561<br>
+
+基于 AX650N/AX620Q 部署 YOLO World<br>
+https://zhuanlan.zhihu.com/p/691807398<br>
 
 
 
