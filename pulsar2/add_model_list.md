@@ -57,6 +57,30 @@ https://zhuanlan.zhihu.com/p/695774561<br>
 基于 AX650N/AX620Q 部署 YOLO World<br>
 https://zhuanlan.zhihu.com/p/691807398<br>
 
+基于 AX650N 部署 Swin Transformer
+https://zhuanlan.zhihu.com/p/621582671
+
+基于 AX650N 部署 DETR
+https://zhuanlan.zhihu.com/p/628356445
+
+基于 AX650N 部署 EfficientViT
+https://zhuanlan.zhihu.com/p/630775597
+
+基于 AX650N 部署 SegFormer
+https://zhuanlan.zhihu.com/p/633380017
+
+基于 AX650N 部署 DINOv2
+https://zhuanlan.zhihu.com/p/637289233
+
+基于 AX650N 的图像修复示例（SAM + LaMa）
+https://zhuanlan.zhihu.com/p/655880436
+
+基于 AX650N 的图文互搜（CLIP）
+https://zhuanlan.zhihu.com/p/660337029
+
+基于 AX650N 的开集目标检测（OWL-ViT）
+https://zhuanlan.zhihu.com/p/678759179
+
 
 qqc-sanのブログ<br>
 https://www.zhihu.com/people/tang-qi-14-37<br>
