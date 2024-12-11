@@ -16,6 +16,8 @@ https://github.com/WongKinYiu/yolov7
 YOLOX-S 80 objects detect  
 https://github.com/Megvii-BaseDetection/YOLOX  
 
+### qqc-sanのブログ
+
 基于 AX650N 部署 RT-DETR<br>
 https://zhuanlan.zhihu.com/p/683445595<br>
 
@@ -56,9 +58,7 @@ https://zhuanlan.zhihu.com/p/695774561<br>
 https://zhuanlan.zhihu.com/p/691807398<br>
 
 
-
-
-qqc神のブログ<br>
+qqc-sanのブログ<br>
 https://www.zhihu.com/people/tang-qi-14-37<br>
 https://www.zhihu.com/people/tang-qi-14-37/answers<br>
 
