@@ -1,8 +1,8 @@
-mobilenet v2
+mobilenet v2  
 https://wiki.sipeed.com/ai/zh/deploy/ax-pi.html
 
-AX620Aにおけるyolov5 6.0モデルの導入実践記録
-https://zhuanlan.zhihu.com/p/569083585
+AX620Aにおけるyolov5 6.0モデルの導入実践記録  
+https://zhuanlan.zhihu.com/p/569083585  
 
 AX620Aでyolov5s自己学習モデルを実行する全過程の記録（windows）  
 
