@@ -77,6 +77,7 @@ https://zhuanlan.zhihu.com/p/660337029
 https://zhuanlan.zhihu.com/p/678759179  
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_OWL-ViT.md
 
+# sipeed maix
 m3axpi_model  
 https://github.com/Abandon-ht/m3axpi_model/tree/main  
 
