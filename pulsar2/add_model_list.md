@@ -1,3 +1,8 @@
+mobilenet v2
+https://wiki.sipeed.com/ai/zh/deploy/ax-pi.html
+
+
+
 YOLOv5s-face face detect  
 https://maixhub.com/model/zoo/110  
 https://github.com/deepcam-cn/yolov5-face  
