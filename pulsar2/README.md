@@ -62,8 +62,6 @@ https://zhuanlan.zhihu.com/p/621582671
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_Swin_Transformer.md  
 
 
-
-
 基于 AX650N 部署 SegFormer  
 https://zhuanlan.zhihu.com/p/633380017  
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_SegFormer.md
@@ -77,7 +75,7 @@ https://zhuanlan.zhihu.com/p/660337029
 
 基于 AX650N 的开集目标检测（OWL-ViT）  
 https://zhuanlan.zhihu.com/p/678759179  
-
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_OWL-ViT.md
 
 m3axpi_model  
 https://github.com/Abandon-ht/m3axpi_model/tree/main  
