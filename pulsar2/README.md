@@ -66,7 +66,7 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conver
 
 基于 AX650N 部署 SegFormer  
 https://zhuanlan.zhihu.com/p/633380017  
-
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_SegFormer.md
 
 基于 AX650N 的图像修复示例（SAM + LaMa）  
 https://zhuanlan.zhihu.com/p/655880436  
