@@ -35,6 +35,7 @@ https://zhuanlan.zhihu.com/p/683050593<br>
 
 基于 AX650N 部署 YOLOv9<br>
 https://zhuanlan.zhihu.com/p/683622844<br>
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conv_YOLO9.md<br>
 
 基于 AX650N 部署 YOLO11<br>
 https://zhuanlan.zhihu.com/p/772269394<br>
