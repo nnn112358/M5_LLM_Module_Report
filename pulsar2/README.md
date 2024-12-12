@@ -50,16 +50,16 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conver
 https://zhuanlan.zhihu.com/p/706645301<br>
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_Qwen2.md  
 
-再谈 YOLO World 部署<br>
-https://zhuanlan.zhihu.com/p/721856217<br>
 
 体验电信星辰 AI LLM（TeleChat）2<br>
 https://zhuanlan.zhihu.com/p/681631430<br>
 https://zhuanlan.zhihu.com/p/695774561<br>
 
-
 基于 AX650N/AX620Q 部署 YOLO World<br>
 https://zhuanlan.zhihu.com/p/691807398<br>
+
+再谈 YOLO World 部署<br>
+https://zhuanlan.zhihu.com/p/721856217<br>
 
 基于 AX650N 部署 Swin Transformer  
 https://zhuanlan.zhihu.com/p/621582671  
