@@ -43,6 +43,8 @@ https://zhuanlan.zhihu.com/p/630775597
 基于 AX650N 部署 DINOv2  
 https://zhuanlan.zhihu.com/p/637289233  
 
+基于 AX650N 部署 DETR  
+https://zhuanlan.zhihu.com/p/628356445  
 
 基于 AX650N 部署 RT-DETR<br>
 https://zhuanlan.zhihu.com/p/683445595<br>
@@ -86,8 +88,6 @@ https://zhuanlan.zhihu.com/p/691807398<br>
 基于 AX650N 部署 Swin Transformer  
 https://zhuanlan.zhihu.com/p/621582671  
 
-基于 AX650N 部署 DETR  
-https://zhuanlan.zhihu.com/p/628356445  
 
 
 
