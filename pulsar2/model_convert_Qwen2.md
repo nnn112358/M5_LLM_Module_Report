@@ -1,3 +1,5 @@
+基于 AX650N/AX630C 部署 Qwen2
+https://zhuanlan.zhihu.com/p/706645301
 
 
 背景
