@@ -17,6 +17,7 @@ https://zhuanlan.zhihu.com/p/683445595<br>
 
 基于 AX650N 部署 TTS 模型（MeloTTS）<br>
 https://zhuanlan.zhihu.com/p/8659249342<br>
+[Update model_convert_MeloTTS.md](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_MeloTTS.md)
 
 
 基于 AX650N 部署 ASR 模型（Whisper）<br>
