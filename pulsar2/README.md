@@ -25,6 +25,7 @@ https://zhuanlan.zhihu.com/p/8623925812<br>
 
 基于 AX650N/AX630C 部署多模态大模型 InternVL2-1B<br>
 https://zhuanlan.zhihu.com/p/4118849355<br>
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_InternVL2-1B.md<br>
 
 基于 AX650N 的单目深度估计（Depth Anything）<br>
 https://zhuanlan.zhihu.com/p/681378259<br>
