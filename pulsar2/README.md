@@ -3,9 +3,11 @@
 
 基于 AX650N 部署 EfficientViT  
 https://zhuanlan.zhihu.com/p/630775597  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_EfficientViT.md  
 
 基于 AX650N 部署 DINOv2  
 https://zhuanlan.zhihu.com/p/637289233  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_%20DINOv2.md  
 
 基于 AX650N 部署 DETR  
 https://zhuanlan.zhihu.com/p/628356445  
@@ -39,6 +41,7 @@ https://zhuanlan.zhihu.com/p/707108832<br>
 
 基于 AX650N/AX630C 部署 Qwen2<br>
 https://zhuanlan.zhihu.com/p/706645301<br>
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_Qwen2.md  
 
 再谈 YOLO World 部署<br>
 https://zhuanlan.zhihu.com/p/721856217<br>
@@ -53,6 +56,7 @@ https://zhuanlan.zhihu.com/p/691807398<br>
 
 基于 AX650N 部署 Swin Transformer  
 https://zhuanlan.zhihu.com/p/621582671  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_Swin_Transformer.md  
 
 
 
@@ -63,7 +67,8 @@ https://zhuanlan.zhihu.com/p/633380017
 
 基于 AX650N 的图像修复示例（SAM + LaMa）  
 https://zhuanlan.zhihu.com/p/655880436  
-
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_SAM%2BLaMa.md  
+ 
 基于 AX650N 的图文互搜（CLIP）  
 https://zhuanlan.zhihu.com/p/660337029  
 
@@ -80,6 +85,7 @@ https://www.zhihu.com/people/tang-qi-14-37/answers<br>
 
 mobilenet v2  
 https://wiki.sipeed.com/ai/zh/deploy/ax-pi.html
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conv_mobilenet_v2.md  
 
 AX620Aにおけるyolov5 6.0モデルの導入実践記録  
 https://zhuanlan.zhihu.com/p/569083585  
