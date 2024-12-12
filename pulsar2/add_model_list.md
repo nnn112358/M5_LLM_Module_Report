@@ -34,7 +34,15 @@ https://github.com/WongKinYiu/yolov7
 YOLOX-S 80 objects detect  
 https://github.com/Megvii-BaseDetection/YOLOX  
 https://github.com/Megvii-BaseDetection/YOLOX/tree/main/demo/ONNXRuntime  
+
 ### qqc-sanのブログ
+
+基于 AX650N 部署 EfficientViT  
+https://zhuanlan.zhihu.com/p/630775597  
+
+基于 AX650N 部署 DINOv2  
+https://zhuanlan.zhihu.com/p/637289233  
+
 
 基于 AX650N 部署 RT-DETR<br>
 https://zhuanlan.zhihu.com/p/683445595<br>
@@ -81,14 +89,11 @@ https://zhuanlan.zhihu.com/p/621582671
 基于 AX650N 部署 DETR  
 https://zhuanlan.zhihu.com/p/628356445  
 
-基于 AX650N 部署 EfficientViT  
-https://zhuanlan.zhihu.com/p/630775597  
+
 
 基于 AX650N 部署 SegFormer  
 https://zhuanlan.zhihu.com/p/633380017  
 
-基于 AX650N 部署 DINOv2  
-https://zhuanlan.zhihu.com/p/637289233  
 
 基于 AX650N 的图像修复示例（SAM + LaMa）  
 https://zhuanlan.zhihu.com/p/655880436  
