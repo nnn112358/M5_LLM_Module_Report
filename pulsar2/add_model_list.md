@@ -22,6 +22,7 @@ https://github.com/deepcam-cn/yolov5-face
 YOLOV5s 80 object detection  
 https://maixhub.com/model/zoo/93  
 https://github.com/ultralytics/yolov5  
+https://zhuanlan.zhihu.com/p/569083585
 
 YOLOv3-Paddle 80 classes detection  
 ax-paddle-yolov3  
