@@ -75,6 +75,7 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conver
  
 基于 AX650N 的图文互搜（CLIP）  
 https://zhuanlan.zhihu.com/p/660337029  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_CLIP.md  
 
 基于 AX650N 的开集目标检测（OWL-ViT）  
 https://zhuanlan.zhihu.com/p/678759179  
