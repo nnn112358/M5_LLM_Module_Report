@@ -14,6 +14,8 @@ https://zhuanlan.zhihu.com/p/628356445
 
 基于 AX650N 部署 RT-DETR<br>
 https://zhuanlan.zhihu.com/p/683445595<br>
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_%20DINOv2.md<br>
+
 
 基于 AX650N 部署 TTS 模型（MeloTTS）<br>
 https://zhuanlan.zhihu.com/p/8659249342<br>
