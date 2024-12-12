@@ -41,6 +41,7 @@ https://zhuanlan.zhihu.com/p/772269394<br>
 
 基于 AX650N 部署多模态大模型 MiniCPM-V 2.0<br>
 https://zhuanlan.zhihu.com/p/707108832<br>
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_MiniCPM-V_2_0.md<br>
 
 基于 AX650N/AX630C 部署 Qwen2<br>
 https://zhuanlan.zhihu.com/p/706645301<br>
