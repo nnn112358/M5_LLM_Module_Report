@@ -60,6 +60,41 @@ pulsar2 build --input decoder.onnx --config config_decoder_u16.json --output_dir
 ```
 * 変換後にdecoder/decoder.axmodelが生成されます
 
+```
+/mnt/qtang/melotts.axera/cpp # ./install/melotts -h
+undefined short option: -h
+usage: ./install/melotts [options] ...
+options:
+  -e, --encoder        encoder onnx (string [=../models/encoder.onnx])
+  -d, --decoder        decoder axmodel (string [=../models/decoder.axmodel])
+  -l, --lexicon        lexicon.txt (string [=../models/lexicon.txt])
+  -t, --token          tokens.txt (string [=../models/tokens.txt])
+      --g              g.bin (string [=../models/g.bin])
+  -s, --sentence       input sentence (string [=爱芯元智半导体股份有限公司，致力于打造世界领先的人工智能感知与边缘计算芯片。服务智慧城市、智能驾驶、机器人的海量普惠的应用])
+  -w, --wav            wav file (string [=output.wav])
+      --speed          speak speed (float [=0.8])
+      --sample_rate    sample rate (int [=44100])
+  -?, --help           print this message
+/mnt/qtang/melotts.axera/cpp # 
+/mnt/qtang/melotts.axera/cpp # ./install/melotts
+encoder: ../models/encoder.onnx
+decoder: ../models/decoder.axmodel
+lexicon: ../models/lexicon.txt
+token: ../models/tokens.txt
+sentence: 爱芯元智半导体股份有限公司，致力于打造世界领先的人工智能感知与边缘计算芯片。服务智慧城市、智能驾驶、机器人的海量普惠的应用
+wav: output.wav
+speed: 0.800000
+sample_rate: 44100
+Load encoder take 4658.14 ms
+Load decoder take 932.28 ms
+Encoder run take 985.42 ms
+Decoder run 9 times take 364.13 ms
+wav len: 525824
+Saved audio to output.wav
+/mnt/qtang/melotts.axera/cpp #
+```
+
+
 ボード上での実行例:
 * プリコンパイル済みのaxmodel、実行プログラム、テスト音声ファイルはネットワークドライブから入手可能
 * 生成される音声ファイルの品質を確保するため、encoderモデルは現在onnxruntimeで実行
