@@ -7,11 +7,13 @@ https://zhuanlan.zhihu.com/p/569083585
 AX620Aでyolov5s自己学習モデルを実行する全過程の記録（windows）
 
 MOT：爱芯派で多目標追跡の素晴らしい効果を実現する方法！
+https://www.yuque.com/prophetmu/chenmumu/ax_tracker
 
 MMPose：爱芯派でキーポイント検出を使いこなそう！
+AX620A运行yolov5s自训练模型全过程记录（windows）
 
 2023年最新 YOLOv8を使用して自分のデータセットを学習し、爱芯派ハードウェアで物体検出と鉄筋検出を実現しよう！！
-
+https://www.yuque.com/prophetmu/chenmumu/m3axpi
 
 YOLOv5s-face face detect  
 https://maixhub.com/model/zoo/110  
