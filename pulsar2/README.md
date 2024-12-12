@@ -1,39 +1,3 @@
-mobilenet v2  
-https://wiki.sipeed.com/ai/zh/deploy/ax-pi.html
-
-AX620Aにおけるyolov5 6.0モデルの導入実践記録  
-https://zhuanlan.zhihu.com/p/569083585  
-
-AX620Aでyolov5s自己学習モデルを実行する全過程の記録（windows）  
-
-MOT：爱芯派で多目標追跡の素晴らしい効果を実現する方法！  
-https://www.yuque.com/prophetmu/chenmumu/ax_tracker   
-
-MMPose：爱芯派でキーポイント検出を使いこなそう！  
-https://www.yuque.com/prophetmu/chenmumu/m3axpi_keypoint  
-
-2023年最新 YOLOv8を使用して自分のデータセットを学習し、爱芯派ハードウェアで物体検出と鉄筋検出を実現しよう！！  
-https://www.yuque.com/prophetmu/chenmumu/m3axpi  
-
-YOLOv5s-face face detect  
-https://maixhub.com/model/zoo/110  
-https://github.com/deepcam-cn/yolov5-face  
-
-YOLOV5s 80 object detection  
-https://maixhub.com/model/zoo/93  
-https://github.com/ultralytics/yolov5    
-https://zhuanlan.zhihu.com/p/569083585  
-
-YOLOv3-Paddle 80 classes detection  
-ax-paddle-yolov3  
-https://maixhub.com/model/zoo/102  
-
-YOLOV7-Tiny 80 objects detect  
-https://github.com/WongKinYiu/yolov7  
-
-YOLOX-S 80 objects detect  
-https://github.com/Megvii-BaseDetection/YOLOX  
-https://github.com/Megvii-BaseDetection/YOLOX/tree/main/demo/ONNXRuntime  
 
 ### qqc-sanのブログ
 
@@ -80,7 +44,9 @@ https://zhuanlan.zhihu.com/p/706645301<br>
 https://zhuanlan.zhihu.com/p/721856217<br>
 
 体验电信星辰 AI LLM（TeleChat）2<br>
+https://zhuanlan.zhihu.com/p/681631430<br>
 https://zhuanlan.zhihu.com/p/695774561<br>
+
 
 基于 AX650N/AX620Q 部署 YOLO World<br>
 https://zhuanlan.zhihu.com/p/691807398<br>
@@ -105,8 +71,47 @@ https://zhuanlan.zhihu.com/p/660337029
 https://zhuanlan.zhihu.com/p/678759179  
 
 
+m3axpi_model  
+https://github.com/Abandon-ht/m3axpi_model/tree/main  
+
 qqc-sanのブログ<br>
 https://www.zhihu.com/people/tang-qi-14-37<br>
 https://www.zhihu.com/people/tang-qi-14-37/answers<br>
 
+mobilenet v2  
+https://wiki.sipeed.com/ai/zh/deploy/ax-pi.html
+
+AX620Aにおけるyolov5 6.0モデルの導入実践記録  
+https://zhuanlan.zhihu.com/p/569083585  
+
+AX620Aでyolov5s自己学習モデルを実行する全過程の記録（windows）  
+
+MOT：爱芯派で多目標追跡の素晴らしい効果を実現する方法！  
+https://www.yuque.com/prophetmu/chenmumu/ax_tracker   
+
+MMPose：爱芯派でキーポイント検出を使いこなそう！  
+https://www.yuque.com/prophetmu/chenmumu/m3axpi_keypoint  
+
+2023年最新 YOLOv8を使用して自分のデータセットを学習し、爱芯派ハードウェアで物体検出と鉄筋検出を実現しよう！！  
+https://www.yuque.com/prophetmu/chenmumu/m3axpi  
+
+YOLOv5s-face face detect  
+https://maixhub.com/model/zoo/110  
+https://github.com/deepcam-cn/yolov5-face  
+
+YOLOV5s 80 object detection  
+https://maixhub.com/model/zoo/93  
+https://github.com/ultralytics/yolov5    
+https://zhuanlan.zhihu.com/p/569083585  
+
+YOLOv3-Paddle 80 classes detection  
+ax-paddle-yolov3  
+https://maixhub.com/model/zoo/102  
+
+YOLOV7-Tiny 80 objects detect  
+https://github.com/WongKinYiu/yolov7  
+
+YOLOX-S 80 objects detect  
+https://github.com/Megvii-BaseDetection/YOLOX  
+https://github.com/Megvii-BaseDetection/YOLOX/tree/main/demo/ONNXRuntime  
 
