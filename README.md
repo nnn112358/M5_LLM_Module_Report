@@ -4,7 +4,7 @@
 
 ## NPUの使用メモリを確認する
 
-[you can check the cmm memory by ](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/cmm_memory.md)
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/cmm_memory_change.md
 
 ```
 cat /proc/ax_proc/mem_cmm_info
