@@ -1,6 +1,5 @@
 # M5_LLM_Module
 <img src="https://github.com/user-attachments/assets/92a2667d-ed4e-4194-955a-eb18aa583dbc" width="300">
-
 <br>
 
 ## NPUの使用メモリを確認する
