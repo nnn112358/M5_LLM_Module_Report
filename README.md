@@ -118,8 +118,7 @@ https://maixhub.com/model/zoo?name=yolo&sort=recently&platform=axera-pi<br>
 
 爱芯元智AX650N部署yolov5s 自定义模型<br>
 https://www.cnblogs.com/smallwxw/p/17836977.html<br>
+https://github.com/derronqi/yolov8-face?tab=readme-ov-file<br>
 
-https://github.com/derronqi/yolov8-face?tab=readme-ov-file
-
-[经验] 【爱芯派 Pro 开发板试用体验】人体姿态估计模型部署后期尝试
-https://bbs.elecfans.com/jishu_2408487_1_1.html
+[经验] 【爱芯派 Pro 开发板试用体验】人体姿态估计模型部署后期尝试<br>
+https://bbs.elecfans.com/jishu_2408487_1_1.html<br>
