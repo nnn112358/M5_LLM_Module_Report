@@ -66,6 +66,8 @@ root@m5stack-LLM:~# cat /proc/ax_proc/mem_cmm_info
 
 ## OSとNPUのメモリの割当を変更する
 
+## 1.ファームウェアの更新
+
 OSとNPUのメモリの割当を変更するすることは、執筆時点(24/12/13)にM5Stakがリリースしているファームウェア(AX630C_emmc_arm64_k419_ubuntu_rootfs_V2.0.0_P7_20241024)では対応していません。
 M5Stackの開発者の@HanxiaoM 氏がプレリリースで公開している、プレリリース版ファームウェア(M5_LLM_ubuntu22_04_20241115.axp)をします。  
 LLM Module ファームウェアアップグレードガイドのファームウェアが正式にバージョンした場合には、正式版のファームウェアを使用してください。   
@@ -79,6 +81,7 @@ https://docs.m5stack.com/ja/guide/llm/llm/image　　
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/M5StackLLM?src=hash&amp;ref_src=twsrc%5Etfw">#M5StackLLM</a> Pre-relrease of new <a href="https://twitter.com/hashtag/ModuleLLM?src=hash&amp;ref_src=twsrc%5Etfw">#ModuleLLM</a> image: <br>1. Add core-config utility (Support for adjusting the CMM by user)<br>2. Upgrade bootlodaer<br>3. Newer version of StackFlow<br>4. Merge opt space to user space<br>5. Other system level bug fix<a href="https://t.co/zB9ejOOsoK">https://t.co/zB9ejOOsoK</a></p>&mdash; HanxiaoMeow (@HanxiaoM) <a href="https://twitter.com/HanxiaoM/status/1861386717640708412?ref_src=twsrc%5Etfw">November 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+## 2.core-configの実行
 
 rootアカウントで、core-configコマンドを実行します。
 
