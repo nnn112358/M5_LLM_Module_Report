@@ -1,11 +1,11 @@
-
-yolov5 python
-https://github.com/AXERA-TECH/pyaxengine/blob/main/examples/yolov5_example.py#L446
-yolov5 C++
-https://github.com/AXERA-TECH/ax-samples/blob/main/examples/base/detection.hpp#L646
-yolov8 C++
-https://github.com/AXERA-TECH/ax-samples/blob/main/examples/base/detection.hpp#L1383
-
+<br>
+yolov5 python<br>
+https://github.com/AXERA-TECH/pyaxengine/blob/main/examples/yolov5_example.py#L446<br>
+yolov5 C++<br>
+https://github.com/AXERA-TECH/ax-samples/blob/main/examples/base/detection.hpp#L646<br>
+yolov8 C++<br>
+https://github.com/AXERA-TECH/ax-samples/blob/main/examples/base/detection.hpp#L1383<br>
+<br><br>
 
 YOLOv5とYOLOv8の物体検出における提案生成処理の主な違いを分析しましょう。
 
