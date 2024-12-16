@@ -10,7 +10,10 @@ I tried before, AX630C does support up to 2Mbps, but there will be bit error in 
 https://x.com/HanxiaoM/status/1864932394375221594
 
 
-```
+
+
+
+```M5StackCoreS3SE_receive.cpp
 #include <M5Unified.h>
 #include "driver/uart.h"
 #include "driver/gpio.h"
@@ -18,7 +21,7 @@ https://x.com/HanxiaoM/status/1864932394375221594
 
 static const char* TAG = "UART_DMA";
 static const int UART_NUM = UART_NUM_2;
-static const int BUF_SIZE = 8192;
+static const int BUF_SIZE = 16384;
 static QueueHandle_t uart_queue;
 static QueueHandle_t display_queue;
 
