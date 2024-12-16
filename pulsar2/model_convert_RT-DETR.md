@@ -112,6 +112,30 @@ python tools/export_onnx.py --config configs/rtdetr/rtdetr_r18vd_6x_coco.yml --r
 python avgpool_optimize.py
 ```
 
+This error indicates another compatibility issue with the torchvision version. The `datapoints` module was added in a more recent version of torchvision (0.14.0+).
+
+Looking at the RT-DETR code, it seems to be using newer torchvision features. Let's install a specific compatible version:
+
+```bash
+pip install torch==2.1.0 torchvision==0.16.0
+```
+
+If that doesn't work, we can modify the code to work with older versions. Open `/src/data/coco/coco_dataset.py` and locate these imports. You might need to replace the `datapoints` import with traditional torchvision transforms.
+
+Here's how you can modify the file:
+
+```python
+# Find this line:
+from torchvision import datapoints
+
+# Replace it with:
+import torchvision.transforms as transforms
+```
+
+You'll likely need to modify other parts of the code that use `datapoints`. If you'd like, share the content of `coco_dataset.py` and I can help you make the necessary adjustments to make it compatible with your torchvision version.
+
+
+
 これらの操作により、rtdetr_r18vd_5x_coco_objects365_from_paddle.onnxモデルが生成されます。
 
 また、**ハードウェアレベルでMultiScaleDeformableAttnをサポート**した、より最適化されたバージョンも提供しています。
