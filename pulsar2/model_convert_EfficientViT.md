@@ -117,6 +117,32 @@ pip install -r requirements.txt
 wget https://github.com/xinyuliu-jeffrey/EfficientViT_Model_Zoo/releases/download/v1.0/efficientvit_m5.pth
 ```
 
+```export_onnx_efficientvit_m5.py
+from model import build
+from timm.models import create_model
+import torch
+
+model = create_model(
+        "EfficientViT_M5",
+        num_classes=1000,
+        distillation=False,
+        pretrained=False,
+        fuse=False,
+    )
+
+checkpoint = torch.load("./efficientvit_m5.pth", map_location='cpu')
+state_dict = checkpoint['model']
+model.load_state_dict(state_dict)
+model.eval()
+dummy_input = torch.rand([1,3,224,224])
+
+model(dummy_input)
+
+torch.onnx.export(model, dummy_input, "efficientvit_m5.onnx", opset_version=11)
+
+```
+
+
 3. **ONNXモデルのエクスポートと最適化**
 ```bash
 python export_onnx_efficientvit_m5.py
