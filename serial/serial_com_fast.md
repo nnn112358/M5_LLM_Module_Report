@@ -12,6 +12,7 @@ https://x.com/HanxiaoM/status/1864932394375221594
 
 
 
+### M5StackCoreS3SE UART受信
 
 ```M5StackCoreS3SE_receive.cpp
 #include <M5Unified.h>
@@ -254,6 +255,7 @@ void loop() {
 
 
 
+### Module_LLM マルチスレッド
 
 ```img_send_llm_module.py
 import serial
@@ -469,4 +471,134 @@ if __name__ == "__main__":
         quality=QUALITY,
         send_interval=SEND_INTERVAL
     )
+```
+
+### Module_LLM シングルスレッド
+```
+import serial
+import time
+import cv2
+from pathlib import Path
+
+def send_video_over_serial(video_path, serial_port='/dev/ttyS1', baudrate=115200, quality=70):
+    """
+    Send MP4 video frames over serial port with identification packet
+    Args:
+        video_path (str): Path to the MP4 video
+        serial_port (str): Serial port to use
+        baudrate (int): Baud rate for serial communication
+        quality (int): JPEG compression quality (1-100)
+    """
+    try:
+        # Open the serial port
+        ser = serial.Serial(
+            port=serial_port,
+            baudrate=baudrate,
+            bytesize=serial.EIGHTBITS,
+            parity=serial.PARITY_NONE,
+            stopbits=serial.STOPBITS_ONE,
+            timeout=1
+        )
+
+        # Check if serial port is open
+        if not ser.is_open:
+            ser.open()
+
+        # Open the video file
+        cap = cv2.VideoCapture(video_path)
+        if not cap.isOpened():
+            raise Exception("Error opening video file")
+
+        frame_count = 0
+        while True:
+            # Read frame from video
+            ret, frame = cap.read()
+            ret, frame = cap.read()
+            ret, frame = cap.read()
+
+
+            resized_frame = cv2.resize(frame, (320, 240), interpolation=cv2.INTER_AREA)
+            # Convert frame to JPEG
+            _, frame_data = cv2.imencode('.jpg', resized_frame, [cv2.IMWRITE_JPEG_QUALITY, quality])
+            image_data = frame_data.tobytes()
+            total_size = len(image_data)
+
+            # Extract size bytes
+            img_size1 = (total_size & 0xFF0000) >> 16
+            img_size2 = (total_size & 0x00FF00) >> 8
+            img_size3 = (total_size & 0x0000FF) >> 0
+
+            # Create packet with header and frame number
+            data_packet = bytearray([
+                0xFF,   # Start marker 1
+                0xD8,   # Start marker 2
+                0xEA,   # Custom identifier 1
+                0x01,   # Custom identifier 2
+                img_size1,  # Size byte 1 (MSB)
+                img_size2,  # Size byte 2
+                img_size3,  # Size byte 3 (LSB)
+                (frame_count >> 16) & 0xFF,  # Frame number byte 1
+                (frame_count >> 8) & 0xFF,   # Frame number byte 2
+                frame_count & 0xFF           # Frame number byte 3
+            ])
+
+            # Send identification packet
+            ser.write(data_packet)
+            print(f"Sent frame {frame_count} header: {' '.join([f'{b:02X}' for b in data_packet])}")
+
+            # Small delay after sending header
+            time.sleep(0.01)
+
+            start_t = time.perf_counter()
+            # Send frame data
+            sent = 0
+            chunk_size = 1024
+            while sent < total_size:
+                chunk = image_data[sent:sent + chunk_size]
+                bytes_sent = ser.write(chunk)
+                sent += bytes_sent
+                # Print progress
+                progress = (sent / total_size) * 100
+                print(f"Frame {frame_count} Progress: {progress:.1f}% ({sent}/{total_size} bytes)", end='\r')
+
+            end_t = time.perf_counter()
+            print(f"\nFrame {frame_count} transmission completed!")
+            frame_count += 1
+
+            elapsed_time = end_t - start_t
+            print(f"time: {elapsed_time}sec")
+
+        print(f"\nVideo transmission completed! Total frames sent: {frame_count}")
+
+    except serial.SerialException as e:
+        print(f"Serial port error: {e}")
+    except FileNotFoundError:
+        print(f"Video file not found: {video_path}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        if 'ser' in locals() and ser.is_open:
+            ser.close()
+            print("Serial port closed")
+        if 'cap' in locals():
+            cap.release()
+            print("Video capture released")
+
+# Example usage
+if __name__ == "__main__":
+    # Configuration
+    VIDEO_PATH = "BadApple.mp4"
+    SERIAL_PORT = "/dev/ttyS1"
+#    BAUD_RATE = 921600
+    BAUD_RATE  = 2000000
+    QUALITY = 50  # JPEG quality (1-100)
+
+    # Send the video
+    send_video_over_serial(
+        video_path=VIDEO_PATH,
+        serial_port=SERIAL_PORT,
+        baudrate=BAUD_RATE,
+        quality=QUALITY
+    )
+
 ```
