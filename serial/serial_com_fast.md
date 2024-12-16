@@ -253,3 +253,220 @@ void loop() {
 ```
 
 
+
+
+```img_send_llm_module.py
+import serial
+import time
+import cv2
+from pathlib import Path
+import threading
+import queue
+from dataclasses import dataclass
+from typing import Optional
+
+@dataclass
+class FrameData:
+    frame_number: int
+    image_data: bytes
+    total_size: int
+
+class VideoReader(threading.Thread):
+    def __init__(self, video_path: str, frame_queue: queue.Queue, quality: int = 70):
+        super().__init__()
+        self.video_path = video_path
+        self.frame_queue = frame_queue
+        self.quality = quality
+        self.stop_flag = threading.Event()
+        
+    def run(self):
+        try:
+            cap = cv2.VideoCapture(self.video_path)
+            if not cap.isOpened():
+                raise Exception("Error opening video file")
+
+            frame_count = 0
+            while not self.stop_flag.is_set():
+                ret, frame = cap.read()
+                if not ret:
+                    break
+                
+                # Skip frames to reduce processing load
+                cap.read()  # skip 1
+                cap.read()  # skip 2
+
+                # Process frame
+                resized_frame = cv2.resize(frame, (320, 240), interpolation=cv2.INTER_AREA)
+#                resized_frame = cv2.resize(frame, (160, 120), interpolation=cv2.INTER_AREA)
+
+                _, frame_data = cv2.imencode('.jpg', resized_frame, 
+                                           [cv2.IMWRITE_JPEG_QUALITY, self.quality])
+                
+                image_data = frame_data.tobytes()
+                frame_data = FrameData(
+                    frame_number=frame_count,
+                    image_data=image_data,
+                    total_size=len(image_data)
+                )
+                
+                # Put frame in queue, with timeout to prevent blocking forever
+                try:
+                    self.frame_queue.put(frame_data, timeout=1)
+                    frame_count += 1
+                except queue.Full:
+                    print("Queue is full, dropping frame")
+                    
+        except Exception as e:
+            print(f"Error in video reader: {e}")
+        finally:
+            cap.release()
+            # Put None to signal end of video
+            self.frame_queue.put(None)
+            
+    def stop(self):
+        self.stop_flag.set()
+
+class SerialSender(threading.Thread):
+    def __init__(self, frame_queue: queue.Queue, 
+                 serial_port: str = '/dev/ttyS1', 
+                 baudrate: int = 115200,
+                 send_interval: float = 0.1):  # 100ms interval by default
+        super().__init__()
+        self.frame_queue = frame_queue
+        self.serial_port = serial_port
+        self.baudrate = baudrate
+        self.send_interval = send_interval
+        self.stop_flag = threading.Event()
+        
+    def create_packet(self, frame_data: FrameData) -> bytearray:
+        total_size = frame_data.total_size
+        frame_count = frame_data.frame_number
+        
+        # Extract size bytes
+        img_size1 = (total_size & 0xFF0000) >> 16
+        img_size2 = (total_size & 0x00FF00) >> 8
+        img_size3 = (total_size & 0x0000FF) >> 0
+        
+        return bytearray([
+            0xFF,   # Start marker 1
+            0xD8,   # Start marker 2
+            0xEA,   # Custom identifier 1
+            0x01,   # Custom identifier 2
+            img_size1,  # Size byte 1 (MSB)
+            img_size2,  # Size byte 2
+            img_size3,  # Size byte 3 (LSB)
+            (frame_count >> 16) & 0xFF,  # Frame number byte 1
+            (frame_count >> 8) & 0xFF,   # Frame number byte 2
+            frame_count & 0xFF           # Frame number byte 3
+        ])
+    
+    def run(self):
+        try:
+            with serial.Serial(
+                port=self.serial_port,
+                baudrate=self.baudrate,
+                bytesize=serial.EIGHTBITS,
+                parity=serial.PARITY_NONE,
+                stopbits=serial.STOPBITS_ONE,
+                timeout=1
+            ) as ser:
+                
+                while not self.stop_flag.is_set():
+                    next_send_time = time.perf_counter() + self.send_interval
+                    
+                    try:
+                        frame_data = self.frame_queue.get(timeout=1)
+                        if frame_data is None:  # End of video signal
+                            break
+                            
+                        # Create and send header packet
+                        packet = self.create_packet(frame_data)
+                        ser.write(packet)
+                        print(f"Sent frame {frame_data.frame_number} header: {' '.join([f'{b:02X}' for b in packet])}")
+                        
+                        # Small delay after sending header
+                        time.sleep(0.01)
+                        
+                        # Send frame data
+                        start_t = time.perf_counter()
+                        sent = 0
+                        chunk_size = 1024
+                        while sent < frame_data.total_size:
+                            chunk = frame_data.image_data[sent:sent + chunk_size]
+                            bytes_sent = ser.write(chunk)
+                            sent += bytes_sent
+                            progress = (sent / frame_data.total_size) * 100
+                            print(f"Frame {frame_data.frame_number} Progress: {progress:.1f}% ({sent}/{frame_data.total_size} bytes)", end='\r')
+                            
+                        end_t = time.perf_counter()
+                        print(f"\nFrame {frame_data.frame_number} sent in {end_t - start_t:.3f} seconds")
+                        
+                        # Wait until next send interval
+                        sleep_time = next_send_time - time.perf_counter()
+                        if sleep_time > 0:
+                            time.sleep(sleep_time)
+                            
+                    except queue.Empty:
+                        continue
+                        
+        except Exception as e:
+            print(f"Error in serial sender: {e}")
+            
+    def stop(self):
+        self.stop_flag.set()
+
+def send_video_over_serial(video_path: str, 
+                          serial_port: str = '/dev/ttyS1', 
+                          baudrate: int = 115200, 
+                          quality: int = 70,
+                          send_interval: float = 0.1):
+    """
+    Send MP4 video frames over serial port using separate threads for reading and sending
+    
+    Args:
+        video_path (str): Path to the MP4 video
+        serial_port (str): Serial port to use
+        baudrate (int): Baud rate for serial communication
+        quality (int): JPEG compression quality (1-100)
+        send_interval (float): Interval between frame transmissions in seconds
+    """
+    # Create frame queue with a maximum size
+    frame_queue = queue.Queue(maxsize=30)  # Buffer up to 30 frames
+    
+    # Create and start the reader and sender threads
+    reader = VideoReader(video_path, frame_queue, quality)
+    sender = SerialSender(frame_queue, serial_port, baudrate, send_interval)
+    
+    try:
+        reader.start()
+        sender.start()
+        
+        # Wait for both threads to complete
+        reader.join()
+        sender.join()
+        
+    except KeyboardInterrupt:
+        print("\nStopping video transmission...")
+        reader.stop()
+        sender.stop()
+        reader.join()
+        sender.join()
+    
+    print("Video transmission completed")
+
+if __name__ == "__main__":
+    # Configuration
+    VIDEO_PATH = "BadApple.mp4"
+    SERIAL_PORT = "/dev/ttyS1"
+    BAUD_RATE = 2000000
+    QUALITY = 50
+    SEND_INTERVAL = 0.03  # 100ms between frames
+    
+    send_video_over_serial(
+        video_path=VIDEO_PATH,
+        serial_port=SERIAL_PORT,
+        baudrate=BAUD_RATE,
+        quality=QUALITY,
+        send_interval=SEND_INTERVAL
+    )
+```
