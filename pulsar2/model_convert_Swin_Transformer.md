@@ -1,3 +1,7 @@
+基于 AX650N 部署 Swin Transformer  
+https://zhuanlan.zhihu.com/p/621582671  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_Swin_Transformer.md  
+
 
 
 背景
