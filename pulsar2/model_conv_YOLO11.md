@@ -1,3 +1,7 @@
+
+基于 AX650N 部署 YOLO11  
+https://zhuanlan.zhihu.com/p/772269394  
+
 # 目的
 
 Module-LLM(ax630c)のNPUでYOLO11を動かすために、
