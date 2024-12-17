@@ -1,6 +1,87 @@
 基于 AX650N/AX630C 部署 Qwen2
 https://zhuanlan.zhihu.com/p/706645301
 
+```
+(python3.11) nnn@Thinkpad-T14:~/LinuxHome/_LLM/241217_yolov9$ cd   ax-llm-build
+(python3.11) nnn@Thinkpad-T14:~/LinuxHome/_LLM/241217_yolov9/ax-llm-build$ mkdir -p Qwen/Qwen2-0.5B-Instruct
+(python3.11) nnn@Thinkpad-T14:~/LinuxHome/_LLM/241217_yolov9/ax-llm-build$ huggingface-cli download --resume-download Qwen/Qwen2-0.5B-Instruct --local-dir Qwen/Qwen2-0.5B-Instruct
+/home/nnn/miniconda3/envs/python3.11/lib/python3.11/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Fetching 10 files:   0%|                                                                         | 0/10 [00:00<?, ?it/s]Downloading 'tokenizer.json' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/tokenizer.json.33ea6c72ebb92a237fa2bdf26c5ff16592efcdae.incomplete'
+Downloading 'model.safetensors' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/model.safetensors.130282af0dfa9fe5840737cc49a0d339d06075f83c5a315c3372c9a0740d0b96.incomplete'
+Downloading 'README.md' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/README.md.f1181ffe23d27388e6bbaa1d7850c8a7ff87337f.incomplete'
+Downloading 'generation_config.json' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/generation_config.json.dfc11073787daf1b0f9c0f1499487ab5f4c93738.incomplete'
+generation_config.json: 100%|███████████████████████████████████████████████████████████| 242/242 [00:00<00:00, 692kB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/generation_config.json           | 0.00/7.03M [00:00<?, ?B/s]
+Downloading 'config.json' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/config.json.463b055262b6c66c4629a74a4b300bfe2ed31d3c.incomplete'%|                                                                 | 0.00/242 [00:00<?, ?B/s]
+README.md: 100%|███████████████████████████████████████████████████████████████████| 3.56k/3.56k [00:00<00:00, 10.9MB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/README.md
+Downloading 'merges.txt' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/merges.txt.20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0.incomplete'                                                                   | 0.00/3.56k [00:00<?, ?B/s]
+config.json: 100%|█████████████████████████████████████████████████████████████████████| 659/659 [00:00<00:00, 6.46MB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/config.json
+                                                                                                                       Downloading 'LICENSE' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/LICENSE.cc375d92d7061b465042e9a1d507cb99598fb97a.incomplete'   1%|▋                                                           | 10.5M/988M [00:00<00:23, 42.0MB/s]
+Downloading '.gitattributes' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/.gitattributes.a6344aac8c09253b3b630fb776ae94478aa0275b.incomplete'
+Downloading 'tokenizer_config.json' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/tokenizer_config.json.ff55d7b9eb1384e5d4d7e75dc0f564c1a8833d6e.incomplete'
+Downloading 'vocab.json' to 'Qwen/Qwen2-0.5B-Instruct/.cache/huggingface/download/vocab.json.4783fe10ac3adce15ac8f358ef5462739852c569.incomplete'
+LICENSE: 100%|█████████████████████████████████████████████████████████████████████| 11.3k/11.3k [00:00<00:00, 8.06MB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/LICENSE
+.gitattributes: 100%|██████████████████████████████████████████████████████████████| 1.52k/1.52k [00:00<00:00, 9.80MB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/.gitattributes
+tokenizer_config.json: 100%|███████████████████████████████████████████████████████| 1.29k/1.29k [00:00<00:00, 2.50MB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/tokenizer_config.json
+merges.txt: 100%|██████████████████████████████████████████████████████████████████| 1.67M/1.67M [00:00<00:00, 2.70MB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/merges.txt██████████████| 7.03M/7.03M [00:00<00:00, 8.09MB/s]
+tokenizer.json: 100%|██████████████████████████████████████████████████████████████| 7.03M/7.03M [00:01<00:00, 7.01MB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/tokenizer.json██████████| 1.67M/1.67M [00:00<00:00, 2.87MB/s]
+vocab.json: 100%|██████████████████████████████████████████████████████████████████| 2.78M/2.78M [00:00<00:00, 3.46MB/s]Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/vocab.json
+model.safetensors: 100%|█████████████████████████████████████████████████████████████| 988M/988M [00:23<00:00, 42.1MB/s]
+Download complete. Moving file to Qwen/Qwen2-0.5B-Instruct/model.safetensors
+Fetching 10 files: 100%|████████████████████████████████████████████████████████████████| 10/10 [00:24<00:00,  2.41s/it]
+/mnt/z/LinuxHome/_LLM/241217_yolov9/ax-llm-build/Qwen/Qwen2-0.5B-Instruct
+(python3.11) nnn@Thinkpad-T14:~/LinuxHome/_LLM/241217_yolov9/ax-llm-build$ pulsar2 llm_build --input_path Qwen/Qwen2-0.5B-Instruct/ --output_path Qwen/Qwen2-0.5B-w8a16/ --kv_cache_len 1023 --model_config config/qwen2-0.5B.json --hidden_state_type bf16 --weight_type s8
+Command 'pulsar2' not found, did you mean:
+  command 'pulsar' from deb odin (2.0.5-2)
+Try: sudo apt install <deb name>
+(python3.11) nnn@Thinkpad-T14:~/LinuxHome/_LLM/241217_yolov9/ax-llm-build$  sudo docker run -it --net host --rm -v $PWD:/data pulsar2:temp-58aa62e4
+[sudo] password for nnn:
+root@Thinkpad-T14:/data# ^C
+root@Thinkpad-T14:/data# pulsar2 llm_build --input_path Qwen/Qwen2-0.5B-Instruct/ --output_path Qwen/Qwen2-0.5B-w8a16/ --kv_cache_len 1023 --model_config config/qwen2-0.5B.json --hidden_state_type bf16 --weight_type s8
+/usr/local/lib/python3.9/site-packages/torch/utils/_contextlib.py:125: UserWarning: Decorating classes is deprecated and will be disabled in future versions. You should only decorate functions or methods. To preserve the current behavior of class decoration, you can directly decorate the `__init__` method and nothing else.
+  warnings.warn("Decorating classes is deprecated and will be disabled in "
+Config(
+    model_name='Qwen2-0.5B-Instruct',
+    model_type='qwen2',
+    num_hidden_layers=24,
+    num_attention_heads=14,
+    num_key_value_heads=2,
+    hidden_size=896,
+    intermediate_size=4864,
+    vocab_size=151936,
+    rope_theta=1000000.0,
+    max_position_embeddings=32768,
+    rope_partial_factor=1.0,
+    rms_norm_eps=1e-06,
+    norm_type='rms_norm',
+    hidden_act='silu',
+    hidden_act_param=0.03,
+    scale_depth=1.4,
+    scale_emb=1,
+    dim_model_base=256,
+    origin_model_type=''
+)
+2024-12-17 09:12:32.152 | SUCCESS  | yamain.command.llm_build:llm_build:109 - prepare llm model done!
+building llm decode layers   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24/24 0:05:49
+building llm post layer   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:03:26
+2024-12-17 09:21:48.040 | SUCCESS  | yamain.command.llm_build:llm_build:185 - build llm model done!
+2024-12-17 09:22:19.746 | SUCCESS  | yamain.command.llm_build:llm_build:364 - check llm model done!
+root@Thinkpad-T14:/data# python tools/extract_embed.py --input_path Qwen/Qwen2-0.5B-Instruct/ --output_path Qwen/Qwen2-0.5B-w8a16/
+find model.embed_tokens.weight in Qwen/Qwen2-0.5B-Instruct/model.safetensors
+root@Thinkpad-T14:/data# python tools/embed-process.py --input Qwen/Qwen2-0.5B-w8a16/model.embed_tokens.weight.npy --output Qwen/Qwen2-0.5B-w8a16/model.embed_tokens.weight.float32.bin
+(151936, 896)
+root@Thinkpad-T14:/data# chmod +x ./tools/fp32_to_bf16
+root@Thinkpad-T14:/data# ./tools/fp32_to_bf16 Qwen/Qwen2-0.5B-w8a16/model.embed_tokens.weight.float32.bin Qwen/Qwen2-0.5B-w8a16/model.embed_tokens.weight.bfloat16.bin
+root@Thinkpad-T14:/data#
+```
 
 背景
 
