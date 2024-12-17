@@ -54,6 +54,7 @@ Pulsar2はアイチップスマートの新世代NPUツールチェーンで、�
 git clone https://github.com/AXERA-TECH/ax-llm-build.git
 cd ax-llm-build
 pip install -U huggingface_hub
+mkdir -p OpenGVLab/InternVL2-1B/
 huggingface-cli download --resume-download OpenGVLab/InternVL2-1B/ --local-dir OpenGVLab/InternVL2-1B/
 ```
 
