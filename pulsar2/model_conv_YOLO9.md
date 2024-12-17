@@ -1,3 +1,8 @@
+基于 AX650N 部署 YOLOv9  
+https://zhuanlan.zhihu.com/p/683622844  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conv_YOLO9.md  
+
+
 ** 爱芯通元NPUの高性能**、高精度、容易な展開という特性により、NPUベースのYOLOv9の適用をいち早く完了しました。
 はじめに
 本稿では以下の内容をご紹介します：
