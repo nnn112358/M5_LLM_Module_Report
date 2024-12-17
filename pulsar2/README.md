@@ -18,6 +18,10 @@ https://github.com/PINTO0309/PINTO_model_zoo/tree/main/461_YOLOv9-Phone<br>
 
 ### qqc-sanのブログ
 
+基于 AX650N 部署 SD1.5-LCM  
+https://zhuanlan.zhihu.com/p/12787525639  
+
+
 基于 AX650N 部署 EfficientViT  
 https://zhuanlan.zhihu.com/p/630775597  
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_EfficientViT.md  
