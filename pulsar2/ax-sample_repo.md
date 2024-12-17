@@ -54,8 +54,8 @@ https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS		<br>
 ## サンプルのソースコード
 
 ### ax-samples(example/ax620e)
-https://github.com/AXERA-TECH/ax-samples
-https://github.com/AXERA-TECH/pulsar2-docs/releases/download/v1.9/ax-samples.zip
+https://github.com/AXERA-TECH/ax-samples<br>
+https://github.com/AXERA-TECH/pulsar2-docs/releases/download/v1.9/ax-samples.zip<br>
 
 ```
 	ax_classification	ax_yolov8		ax_yolo11_seg		ax_crowdcount												
@@ -70,7 +70,7 @@ https://github.com/AXERA-TECH/pulsar2-docs/releases/download/v1.9/ax-samples.zip
 																
 					
 ### ax620e_bsp_sdk		
-https://github.com/AXERA-TECH/ax620e_bsp_sdk
+https://github.com/AXERA-TECH/ax620e_bsp_sdk<br>
 
 ``` 
 	FRTDemo		sample_cipher_s		sample_gzipd_s		sample_ivps		sample_npu_classification		sample_rtc		sample_vdec		sample_venc		sample_venc		sample_vin_ivps_vo_venc
@@ -93,8 +93,8 @@ https://github.com/AXERA-TECH/ax-npu-kit-620e
 
 ### GoogleDrive:ModelZoo
 
-https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl  
-https://x.com/qqc1989/status/1855507945989038424  
+https://drive.google.com/drive/folders/11aRxsFqJfGXhFMlInudj3Bi8SR-08TXl  <br>
+https://x.com/qqc1989/status/1855507945989038424  <br>
 
 ```
 Classification /mobilenetv2
@@ -109,7 +109,7 @@ YOLO_World_v2
 ```
 
 ### GoogleDrive:ax-samples/ax650
-https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS  
+https://drive.google.com/drive/folders/1JY59vOFS2qxI8TkVIZ0pHfxHMfKPW5PS  <br>
 
 ```
 dinov2_small_518_precision_opt.axmodel  ppyoloe_plus_crn_m_60e_objects365.axmodel        yolov5s-face.axmodel
