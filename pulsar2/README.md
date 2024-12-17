@@ -1,6 +1,6 @@
 efficentvit 
 internvl  
-
+qwen2
 
 ## pulsar2-docs
 pulsar2-docs<br>
