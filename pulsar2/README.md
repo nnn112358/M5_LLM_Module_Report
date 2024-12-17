@@ -7,6 +7,9 @@ pulsar2-docs<br>
 https://pulsar2-docs.readthedocs.io/en/latest/index.html<br>
 https://axera-pi-zero-docs-cn.readthedocs.io/zh-cn/latest/doc_guide_algorithm.html<br>
 
+google drive pulsar<br>
+https://drive.google.com/drive/folders/10rfQIAm5ktjJ1bRMsHbUanbAplIn3ium<br>
+
 ### Pinto Model Zoo
 
 https://github.com/PINTO0309/PINTO_model_zoo/tree/main/439_Depth-Anything<br>
