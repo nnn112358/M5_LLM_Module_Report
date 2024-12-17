@@ -10,12 +10,12 @@ InternVL2（中国語名：書生·万象）は上海人工知能研究所のOpe
 
 InternVL2-1B
 
-GitHubリポジトリ：https://github.com/OpenGVLab/InternVL
-公式ブログ：InternVL2 https://link.zhihu.com/?target=https%3A//internvl.github.io/blog/2024-07-02-InternVL-2.0/
-オンラインデモ：https://internvl.opengvlab.com/
+GitHubリポジトリ：https://github.com/OpenGVLab/InternVL  
+公式ブログ：InternVL2 https://link.zhihu.com/?target=https%3A//internvl.github.io/blog/2024-07-02-InternVL-2.0/  
+オンラインデモ：https://internvl.opengvlab.com/  
 
 技術的特徴
-![v2-ea0b077ee35bada96701cd926a3c9bf5_1440w](https://github.com/user-attachments/assets/3794f79e-c089-4c21-9120-f0023d123f19)
+![v2-ea0b077ee35bada96701cd926a3c9bf5_1440w](https://github.com/user-attachments/assets/3794f79e-c089-4c21-9120-f0023d123f19)  
 
 1. **マルチモーダル処理能力**：より大規模なバージョンと同様に、InternVL2-1Bは画像とテキストデータの統合処理をサポートし、クロスモーダルコンテンツの理解と生成を目指しています。
 
