@@ -1,4 +1,6 @@
-
+基于 AX650N 部署 EfficientViT  
+https://zhuanlan.zhihu.com/p/630775597  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_EfficientViT.md  
 
 背景:
 エッジデバイスのシナリオでは、モデル推論のリアルタイム性が重要な要件となります。しかし、大半の軽量Vision Transformerネットワークは、既存のエッジ/エンドポイントAIデバイス(CPU、NPU)上で、MobileNetのような軽量CNNと同等の速度を達成できていません。
