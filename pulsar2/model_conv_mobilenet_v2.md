@@ -1,5 +1,7 @@
 
-
+mobilenet v2  
+https://wiki.sipeed.com/ai/zh/deploy/ax-pi.html  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conv_mobilenet_v2.md  
 ## 前提
 
 Module-LLMにモデルを導入するには、モデルをINT8に量子化してモデルサイズを縮小し、実行速度を向上させる必要があります。
