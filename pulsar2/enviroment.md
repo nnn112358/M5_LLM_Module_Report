@@ -1,6 +1,8 @@
 
 
 ```
+# sudo docker run -it --net host --rm -v $PWD:/data pulsar2:3.3
+
 root@Thinkpad-T14:/data# pip freeze
 asttokens==2.1.0
 boto3==1.35.71
