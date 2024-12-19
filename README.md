@@ -30,6 +30,9 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/info_memo_241206.md
 ## ncnnでのCPU推論ベンチマーク
 [NCNNでのCPU推論ベンチマーク比較](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/benchmark.md)<br>
 
+## PythonでのNPU推論とCPU推論の比較ベンチマーク
+https://github.com/nnn112358/ax-classification_benchmark
+
 ## UART通信
 [LLM ModuleとM5Stack CoreS3SEとの間でUART通信を行う](https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/serial_com.md)<br>
 
