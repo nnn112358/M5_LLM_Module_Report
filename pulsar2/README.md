@@ -1,6 +1,3 @@
-efficentvit   
-internvl    
-qwen2  
 
 ```
 $ sudo docker run --net host --rm -v $PWD:/data pulsar2:3.3
