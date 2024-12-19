@@ -3,8 +3,8 @@ internvl
 qwen2  
 
 ```
-sudo docker run --net host --rm -v $PWD:/data pulsar2:3.3
-
+$ sudo docker run --net host --rm -v $PWD:/data pulsar2:3.3
+$ pulsar2 build --target_hardware AX620E --input model/mobilenetv2-sim.onnx --output_dir output --config config/mobilenet_v2_build_config.json
 ```
   
 ## pulsar2-docs
