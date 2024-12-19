@@ -1,6 +1,6 @@
-https://wiki.onakasuita.org/pukiwiki/?Module%20LLM%2F%E3%83%A2%E3%83%87%E3%83%AB%2FOpenBuddy　　
-https://x.com/tokkyo/status/1859876546720432643　　
-https://github.com/tokkyo/StackFlow　　
+https://wiki.onakasuita.org/pukiwiki/?Module%20LLM%2F%E3%83%A2%E3%83%87%E3%83%AB%2FOpenBuddy<br>
+https://x.com/tokkyo/status/1859876546720432643<br>
+https://github.com/tokkyo/StackFlow<br>
 
 
 个人精力有限，无法编写出完美的 c++ tokenizer 解析器，
