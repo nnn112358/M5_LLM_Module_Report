@@ -24,4 +24,10 @@ AX630Cがこのアドレスに正常にアクセスできることを確認し�
 run_internvl2_ax630c.sh 内の --filename_tokenizer_model のIP情報を手順1で指定したIPと一致するように変更します。
 3、run_internvl2_ax630c.sh を実行します。
 
+## LLM関連の作品
+
+
+ミソ・イン・ザ・スープ
+https://karaage.hatenadiary.jp/entry/2024/06/21/125715
+
 
