@@ -1,7 +1,7 @@
 ### Pinto Model Zoo
 
-https://github.com/PINTO0309/PINTO_model_zoo/tree/main/425_Gold-YOLO-Body-Head-Hand
-https://github.com/PINTO0309/PINTO_model_zoo/tree/main/449_YOLOX-WholeBody12
+https://github.com/PINTO0309/PINTO_model_zoo/tree/main/425_Gold-YOLO-Body-Head-Hand<br>
+https://github.com/PINTO0309/PINTO_model_zoo/tree/main/449_YOLOX-WholeBody12<br>
 https://github.com/PINTO0309/PINTO_model_zoo/tree/main/439_Depth-Anything<br>
 https://github.com/PINTO0309/PINTO_model_zoo/tree/main/457_YOLOv9-Wholebody17<br>
 https://github.com/PINTO0309/PINTO_model_zoo/tree/main/459_YOLOv9-Wholebody25<br>
