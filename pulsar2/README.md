@@ -27,6 +27,16 @@ https://github.com/PINTO0309/PINTO_model_zoo/tree/main/461_YOLOv9-Phone<br>
 
 ### qqc-sanのブログ
 
+基于 AX650N 的图文互搜（CLIP）  
+https://zhuanlan.zhihu.com/p/660337029  
+https://github.com/AXERA-TECH/CLIP-ONNX-AX650-CPP<br>
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_CLIP.md  
+
+基于 AX650N 的开集目标检测（OWL-ViT）  
+https://zhuanlan.zhihu.com/p/678759179  
+https://github.com/AXERA-TECH/OWLVIT-ONNX-AX650-CPP/tree/master<br>
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_OWL-ViT.md
+
 基于 AX650N 部署 SD1.5-LCM  
 https://zhuanlan.zhihu.com/p/12787525639  
 
@@ -62,15 +72,7 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conver
 基于 AX650N 的单目深度估计（Depth Anything）<br>
 https://zhuanlan.zhihu.com/p/681378259<br>
 
-基于 AX620Q 部署 YOLOv8<br>
-https://zhuanlan.zhihu.com/p/683050593<br>
 
-基于 AX650N 部署 YOLOv9<br>
-https://zhuanlan.zhihu.com/p/683622844<br>
-https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conv_YOLO9.md<br>
-
-基于 AX650N 部署 YOLO11<br>
-https://zhuanlan.zhihu.com/p/772269394<br>
 
 基于 AX650N 部署多模态大模型 MiniCPM-V 2.0<br>
 https://zhuanlan.zhihu.com/p/707108832<br>
@@ -85,15 +87,6 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conver
 https://zhuanlan.zhihu.com/p/681631430<br>
 https://zhuanlan.zhihu.com/p/695774561<br>
 
-基于 AX650N/AX620Q 部署 YOLO World<br>
-https://zhuanlan.zhihu.com/p/691807398<br>
-
-再谈 YOLO World 部署<br>
-https://zhuanlan.zhihu.com/p/721856217<br>
-
-基于 AX650N 部署 Swin Transformer  
-https://zhuanlan.zhihu.com/p/621582671  
-https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_Swin_Transformer.md  
 
 基于 AX650N 部署 SegFormer  
 https://zhuanlan.zhihu.com/p/633380017  
@@ -103,13 +96,30 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conver
 https://zhuanlan.zhihu.com/p/655880436  
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_SAM%2BLaMa.md  
  
-基于 AX650N 的图文互搜（CLIP）  
-https://zhuanlan.zhihu.com/p/660337029  
-https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_CLIP.md  
+## 済み
 
-基于 AX650N 的开集目标检测（OWL-ViT）  
-https://zhuanlan.zhihu.com/p/678759179  
-https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_OWL-ViT.md
+基于 AX620Q 部署 YOLOv8<br>
+https://zhuanlan.zhihu.com/p/683050593<br>
+
+基于 AX650N 部署 YOLOv9<br>
+https://zhuanlan.zhihu.com/p/683622844<br>
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conv_YOLO9.md<br>
+
+基于 AX650N 部署 YOLO11<br>
+https://zhuanlan.zhihu.com/p/772269394<br>
+
+基于 AX650N/AX620Q 部署 YOLO World<br>
+https://zhuanlan.zhihu.com/p/691807398<br>
+
+再谈 YOLO World 部署<br>
+https://zhuanlan.zhihu.com/p/721856217<br>
+
+
+基于 AX650N 部署 Swin Transformer  
+https://zhuanlan.zhihu.com/p/621582671  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_Swin_Transformer.md  
+
+
 
 # sipeed maix
 m3axpi_model  
