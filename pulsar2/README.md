@@ -41,9 +41,6 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conver
 https://zhuanlan.zhihu.com/p/12787525639  
 
 
-基于 AX650N 部署 EfficientViT  
-https://zhuanlan.zhihu.com/p/630775597  
-https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_EfficientViT.md  
 
 基于 AX650N 部署 DINOv2  
 https://zhuanlan.zhihu.com/p/637289233  
@@ -69,10 +66,6 @@ https://zhuanlan.zhihu.com/p/8623925812<br>
 https://zhuanlan.zhihu.com/p/4118849355<br>
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_InternVL2-1B.md<br>
 
-基于 AX650N 的单目深度估计（Depth Anything）<br>
-https://zhuanlan.zhihu.com/p/681378259<br>
-
-
 
 基于 AX650N 部署多模态大模型 MiniCPM-V 2.0<br>
 https://zhuanlan.zhihu.com/p/707108832<br>
@@ -82,11 +75,9 @@ https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_conver
 https://zhuanlan.zhihu.com/p/706645301<br>
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_Qwen2.md  
 
-
 体验电信星辰 AI LLM（TeleChat）2<br>
 https://zhuanlan.zhihu.com/p/681631430<br>
 https://zhuanlan.zhihu.com/p/695774561<br>
-
 
 基于 AX650N 部署 SegFormer  
 https://zhuanlan.zhihu.com/p/633380017  
@@ -97,6 +88,15 @@ https://zhuanlan.zhihu.com/p/655880436
 https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_SAM%2BLaMa.md  
  
 ## 済み
+
+基于 AX650N 的单目深度估计（Depth Anything）<br>
+https://zhuanlan.zhihu.com/p/681378259<br>
+
+
+基于 AX650N 部署 EfficientViT  
+https://zhuanlan.zhihu.com/p/630775597  
+https://github.com/nnn112358/M5_LLM_Module_Report/blob/main/pulsar2/model_convert_EfficientViT.md  
+
 
 基于 AX620Q 部署 YOLOv8<br>
 https://zhuanlan.zhihu.com/p/683050593<br>
